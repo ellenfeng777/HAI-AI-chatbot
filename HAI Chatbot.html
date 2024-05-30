@@ -1,0 +1,2853 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <script async>
+      const languages = ['en', 'de', 'fr', 'es', 'nl', 'it'];
+      const htmlLang = document.documentElement.lang;
+      let cookieNames = [];
+      
+      if (languages.includes(htmlLang)) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          // 1. default deny tracking, put in <head> before all other gtag/ga code
+          function getCookie(name) {
+            let cookieName = name + "=";
+            let cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i].trim();
+                if (cookie.indexOf(cookieName) === 0) {
+                    return decodeURIComponent(cookie.substring(cookieName.length));
+                }
+            }
+            return null;
+          }
+          if (htmlLang.includes('en')) {
+            cookieNames = [
+              'EnPerformanceAndAnalyticsCookies',
+              'EnAdvertisementAndTargetingCookies',
+            ];
+          } else {
+            cookieNames = [
+              'PerformanceAndAnalyticsCookies',
+              'AdvertisementAndTargetingCookies',
+            ];
+          }
+
+          const updateCookie = getCookie('updateCookie');
+          const PerformanceAndAnalyticsCookies = getCookie(cookieNames[0]);
+          const AdvertisementAndTargetingCookies = getCookie(cookieNames[1]);
+
+          if(updateCookie) {
+            if(!PerformanceAndAnalyticsCookies) {
+              gtag('consent', 'default', {
+                analytics_storage: 'denied',
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+                wait_for_update: 500, // wait for an update signal to overwrite, if any. (for waiting CMP)
+                region: [ // to apply default to specific countries only
+                  'AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+                ],
+              });
+            }
+            if(!AdvertisementAndTargetingCookies) {
+              gtag('consent', 'default', {
+                analytics_storage: 'granted',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 500, // wait for an update signal to overwrite, if any. (for waiting CMP)
+                region: [ // to apply default to specific countries only
+                  'AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+                ],
+              });
+            }
+            if(!PerformanceAndAnalyticsCookies && !AdvertisementAndTargetingCookies) {
+              gtag('consent', 'default', {
+                analytics_storage: 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 500, // wait for an update signal to overwrite, if any. (for waiting CMP)
+                region: [ // to apply default to specific countries only
+                  'AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+                ],
+              });
+            }
+            if(PerformanceAndAnalyticsCookies && AdvertisementAndTargetingCookies) {
+              gtag('consent', 'default', {
+                analytics_storage: 'granted',
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+                wait_for_update: 500, // wait for an update signal to overwrite, if any. (for waiting CMP)
+                region: [ // to apply default to specific countries only
+                  'AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+                ],
+              });
+            }
+          } else {
+            gtag('consent', 'default', {
+              analytics_storage: 'granted',
+              ad_storage: 'granted',
+              ad_user_data: 'granted',
+              ad_personalization: 'granted',
+              wait_for_update: 500, // wait for an update signal to overwrite, if any. (for waiting CMP)
+              region: [ // to apply default to specific countries only
+                'AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK',
+              ],
+            });
+          }
+
+           document.addEventListener('DOMContentLoaded', function() {
+            // Define event element name
+            const allowAll = document.querySelector('.cookie-usage .item-all input');
+            const items = document.querySelectorAll('.cookie-usage .item');
+            if(items.length) {
+              const StrictlyNecessary = items[0].querySelector('input');
+              const PerformanceAndAnalytics = items[1].querySelector('input');
+              const AdvertisementAndTargeting = items[2].querySelector('input');
+              const SaveSettings = document.querySelector('.cookie-usage .save-btn');
+              let gtagConsentOption = {
+                analytics_storage: 'granted',
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+              };
+              // Check if all are selected
+              function checkAllowAll() {
+                if (
+                  StrictlyNecessary.checked &&
+                  PerformanceAndAnalytics.checked &&
+                  AdvertisementAndTargeting.checked
+                ) {
+                  allowAll.setAttribute('checked', true);
+                  gtagConsentOption = {
+                    analytics_storage: 'granted',
+                    ad_storage: 'granted',
+                    ad_user_data: 'granted',
+                    ad_personalization: 'granted',
+                  };
+                } else {
+                  allowAll.removeAttribute('checked');
+                  gtagConsentOption = {
+                    analytics_storage: 'denied',
+                    ad_storage: 'denied',
+                    ad_user_data: 'denied',
+                    ad_personalization: 'denied',
+                  };
+                }
+              }
+              // Allow All all events
+              allowAll.addEventListener('change', function() {
+                checkAllowAll();
+              });
+              // PerformanceAndAnalytics events
+              PerformanceAndAnalytics.addEventListener('change', function() {
+                checkAllowAll();
+                if (this.checked) {
+                  gtagConsentOption.analytics_storage = 'granted';
+                } else {
+                  gtagConsentOption.analytics_storage = 'denied';
+                }
+              });
+              // AdvertisementAndTargeting events
+              AdvertisementAndTargeting.addEventListener('change', function() {
+                checkAllowAll();
+                if (this.checked) {
+                  gtagConsentOption.ad_storage = 'granted';
+                  gtagConsentOption.ad_user_data = 'granted';
+                  gtagConsentOption.ad_personalization = 'granted';
+                } else {
+                  gtagConsentOption.ad_storage = 'denied';
+                  gtagConsentOption.ad_user_data = 'denied';
+                  gtagConsentOption.ad_personalization = 'denied';
+                }
+              });
+              // Save Settings events
+              SaveSettings.addEventListener('click', function() {
+                gtag('consent', 'update', gtagConsentOption);
+              });
+          }
+        });
+      }
+    </script>
+    <meta charset="utf-8" />
+<link rel="canonical" href="https://www.hairobotics.com" />
+<meta name="description" content="As the pioneer in ACR systems, Hai Robotics is committed to providing automated warehouse solutions and autonomous mobile robots (AMRs). We aim to help factories to realize warehouse and logistics automation. Get in touch now!" />
+<meta name="abstract" content="Hai Robotics is the pioneer and leader in ACR systems. The company is committed to providing automation solutions to every warehouse and factory." />
+<meta name="keywords" content="warehouse automation, warehouse robotics company, autonomous mobile robots, automated warehouse solutions, logistics automation" />
+<meta property="og:site_name" content="HAI ROBOTICS" />
+<meta property="og:url" content="https://www.hairobotics.com/home" />
+<meta property="og:title" content="Hai Robotics Homepage" />
+<meta property="og:description" content="Hai Robotics is a leading global provider of Automated Storage and Retrieval Systems (ASRS) and the pioneer of Autonomous Case-handling Mobile Robotic (ACR) systems. We are committed to elevating the world’s access to inventory by providing smart, fast, flexible, and efficient warehouse automation that accommodates all facilities." />
+<meta property="og:image" content="https://www.hairobotics.com/sites/default/files/2023-08/hai-robotics-homepage-cover.jpg" />
+<meta name="google-site-verification" content="8a55LoYaH0wG-9IorKHrFjwUninFx3-6sTRcmYvKKQw" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Hai Robotics is a leading global provider of Automated Storage and Retrieval Systems (ASRS) and the pioneer of Autonomous Case-handling Mobile Robotic (ACR) systems. We are committed to elevating the world’s access to inventory by providing smart, fast, flexible, and efficient warehouse automation that accommodates all facilities." />
+<meta name="twitter:title" content="Hai Robotics Homepage" />
+<meta name="twitter:url" content="https://www.hairobotics.com/home" />
+<meta name="twitter:image" content="https://www.hairobotics.com/sites/default/files/2023-08/hai-robotics-homepage-cover.jpg" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<style>
+  
+  .hbspt-form {
+  
+      margin: 0 auto;
+  
+      width: 100%;
+  
+      text-align: center;
+  
+      max-width: 636px;
+  
+  }
+  </style>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "additionalType": "Corporation",
+            "description": "Hai Robotics is a leading global provider of Automated Storage and Retrieval Systems (ASRS) and the pioneer of Autonomous Case-handling Mobile Robotic (ACR) systems. We are committed to elevating the world’s access to inventory by providing smart, fast, flexible, and efficient warehouse automation that accommodates all facilities.",
+            "name": "Hai Robotics",
+            "sameAs": [
+                "https://en.wikipedia.org/wiki/Hai_Robotics",
+                "https://www.linkedin.com/company/hai-robotics/",
+                "https://www.facebook.com/HAIROBOTICS/",
+                "https://twitter.com/RoboticsHai",
+                "https://www.youtube.com/HAIROBOTICS"
+            ],
+            "url": "https://www.hairobotics.com/home",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "sales@hairobotics.com",
+                "availableLanguage": "English",
+                "contactType": "customer service",
+                "areaServed": {
+                    "@type": "AdministrativeArea",
+                    "name": "global"
+                }
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://www.hairobotics.com/sites/default/files/2023-08/hai-robotics-homepage-cover.jpg"
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.hairobotics.com/themes/custom/hairobotics/logo.svg"
+            }
+        }
+    ]
+}</script>
+<link rel="icon" href="/themes/custom/hairobotics/favicon.ico" type="image/vnd.microsoft.icon" />
+<script src="/sites/default/files/google_tag/gtm/google_tag.script.js?se8mh0" defer></script>
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.callbacks.push({
+    share: function(share_data) {
+        if (share_data.service == "WeChat") {
+            return {stop:true};
+        }else{
+            return {title: document.title,url: location.href};
+        }
+    },
+});</script>
+
+    <title>Next-gen Warehouse Automation with ACR Systems, Warehouse Robotics Company | Hai Robotics</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_-9wxElpnBJOw3WE6jO1C43AXmpaKeaKBaBJQGFHSaZY.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_6Ptq8VXG3NOu6ySQ9FsSOfNLItPSmlAuvYI9kb3yYm8.css" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/39","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"addtoany\/addtoany,captcha\/base,core\/internal.jquery.form,extlink\/drupal.extlink,hairobotics\/flatpickr,hairobotics\/multiselect,hairobotics\/scripts,hairobotics\/stylesheet,hobs_user\/hobs_user.ajax_callback,hubspot\/hubspot.code_tracking,layout_discovery\/onecol,media\/filter.caption,paragraphs\/drupal.paragraphs.unpublished,recaptcha\/google.recaptcha_en,recaptcha\/recaptcha,smart_content\/condition.common,smart_content\/condition_type.standard,smart_content\/smart_content,smart_content_country_code\/condition.country_code_condition,system\/base,view_password\/pwd_lb,views\/views.module,webform\/webform.ajax,webform\/webform.element.details.save,webform\/webform.element.details.toggle,webform\/webform.element.message,webform\/webform.form","theme":"hairobotics","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/home?ajax_form=1":true},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"ipPopup":{"ipApiUrl":"https:\/\/vevfqqxa62.execute-api.eu-central-1.amazonaws.com\/prod\/ip"},"smartContent":{"segments":{"341fcfcf-f9e7-460a-82ee-c6292d46ec0f":{"uuid":"341fcfcf-f9e7-460a-82ee-c6292d46ec0f","conditions":{"group":{"field":{"pluginId":"group","type":"plugin:group","negate":false,"unique":true},"settings":{"op":"OR"},"conditions":{"country_code_condition:continent":{"field":{"pluginId":"country_code_condition:continent","type":"type:textfield","negate":false,"unique":false,"settings":{"negate":"0","op":"equals","value":"NA"}},"settings":{"negate":"0","op":"equals","value":"NA"}},"country_code_condition:continent_2":{"field":{"pluginId":"country_code_condition:continent","type":"type:textfield","negate":false,"unique":false,"settings":{"negate":"0","op":"equals","value":"SA"}},"settings":{"negate":"0","op":"equals","value":"SA"}}}}}},"e8f099f3-a41a-4124-82fe-c8631fd4366c":{"uuid":"e8f099f3-a41a-4124-82fe-c8631fd4366c","conditions":{"group":{"field":{"pluginId":"group","type":"plugin:group","negate":false,"unique":true},"settings":{"op":"AND"},"conditions":{"country_code_condition:continent":{"field":{"pluginId":"country_code_condition:continent","type":"type:textfield","negate":true,"unique":false,"settings":{"negate":"1","op":"equals","value":"NA"}},"settings":{"negate":"1","op":"equals","value":"NA"}},"country_code_condition:continent_2":{"field":{"pluginId":"country_code_condition:continent","type":"type:textfield","negate":true,"unique":false,"settings":{"negate":"1","op":"equals","value":"SA"}},"settings":{"negate":"1","op":"equals","value":"SA"}}}}}}},"decisions":{"32042a85-8586-407f-9b00-c26a14ad8523":{"token":"32042a85-8586-407f-9b00-c26a14ad8523","storage":"content_entity","reactions":{"341fcfcf-f9e7-460a-82ee-c6292d46ec0f":{"id":"341fcfcf-f9e7-460a-82ee-c6292d46ec0f"},"e8f099f3-a41a-4124-82fe-c8631fd4366c":{"id":"e8f099f3-a41a-4124-82fe-c8631fd4366c"}}}}},"view_password":{"span_classes":"","showPasswordLabel":"Show password","hidePasswordLabel":"Hide password"},"ajax":{"edit-submit":{"callback":"::ajaxLogin","wrapper":"login-form-container","event":"mousedown","keypress":true,"prevent":"click","url":"\/home?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Log in"}},"edit-actions-submit":{"callback":"::submitAjaxForm","event":"click","effect":"fade","speed":500,"progress":{"type":"throbber","message":""},"disable-refocus":true,"url":"\/home?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}}},"address_data":{"country_json":"[{\u0022name_en\u0022:\u0022Afghanistan\u0022,\u0022code\u0022:\u0022AFG\u0022},{\u0022name_en\u0022:\u0022Aland Islands\u0022,\u0022code\u0022:\u0022ALA\u0022},{\u0022name_en\u0022:\u0022Albania\u0022,\u0022code\u0022:\u0022ALB\u0022},{\u0022name_en\u0022:\u0022Algeria\u0022,\u0022code\u0022:\u0022DZA\u0022},{\u0022name_en\u0022:\u0022American Samoa\u0022,\u0022code\u0022:\u0022ASM\u0022},{\u0022name_en\u0022:\u0022Andorra\u0022,\u0022code\u0022:\u0022AND\u0022},{\u0022name_en\u0022:\u0022Angola\u0022,\u0022code\u0022:\u0022AGO\u0022},{\u0022name_en\u0022:\u0022Anguilla\u0022,\u0022code\u0022:\u0022AIA\u0022},{\u0022name_en\u0022:\u0022Antigua and Barbuda\u0022,\u0022code\u0022:\u0022ATG\u0022},{\u0022name_en\u0022:\u0022Argentina\u0022,\u0022code\u0022:\u0022ARG\u0022},{\u0022name_en\u0022:\u0022Armenia\u0022,\u0022code\u0022:\u0022ARM\u0022},{\u0022name_en\u0022:\u0022Aruba\u0022,\u0022code\u0022:\u0022ABW\u0022},{\u0022name_en\u0022:\u0022Ascension Island\u0022,\u0022code\u0022:\u0022ASC\u0022},{\u0022name_en\u0022:\u0022Australia\u0022,\u0022code\u0022:\u0022AUS\u0022},{\u0022name_en\u0022:\u0022Austria\u0022,\u0022code\u0022:\u0022AUT\u0022},{\u0022name_en\u0022:\u0022Azerbaijan\u0022,\u0022code\u0022:\u0022AZE\u0022},{\u0022name_en\u0022:\u0022Bahamas\u0022,\u0022code\u0022:\u0022BHS\u0022},{\u0022name_en\u0022:\u0022Bahrain\u0022,\u0022code\u0022:\u0022BHR\u0022},{\u0022name_en\u0022:\u0022Bangladesh\u0022,\u0022code\u0022:\u0022BGD\u0022},{\u0022name_en\u0022:\u0022Barbados\u0022,\u0022code\u0022:\u0022BRB\u0022},{\u0022name_en\u0022:\u0022Belarus\u0022,\u0022code\u0022:\u0022BY\u0022},{\u0022name_en\u0022:\u0022Belgium\u0022,\u0022code\u0022:\u0022BEL\u0022},{\u0022name_en\u0022:\u0022Belize\u0022,\u0022code\u0022:\u0022BLZ\u0022},{\u0022name_en\u0022:\u0022Benin\u0022,\u0022code\u0022:\u0022BEN\u0022},{\u0022name_en\u0022:\u0022Bermuda\u0022,\u0022code\u0022:\u0022BMU\u0022},{\u0022name_en\u0022:\u0022Bhutan\u0022,\u0022code\u0022:\u0022BTN\u0022},{\u0022name_en\u0022:\u0022Bolivia\u0022,\u0022code\u0022:\u0022BOL\u0022},{\u0022name_en\u0022:\u0022Bosnia and Herzegovina\u0022,\u0022code\u0022:\u0022BIH\u0022},{\u0022name_en\u0022:\u0022Botswana\u0022,\u0022code\u0022:\u0022BWA\u0022},{\u0022name_en\u0022:\u0022Bouvet Island\u0022,\u0022code\u0022:\u0022BVT\u0022},{\u0022name_en\u0022:\u0022Brazil\u0022,\u0022code\u0022:\u0022BRA\u0022},{\u0022name_en\u0022:\u0022British Indian Ocean Territory\u0022,\u0022code\u0022:\u0022IOT\u0022},{\u0022name_en\u0022:\u0022Brunei\u0022,\u0022code\u0022:\u0022BRN\u0022},{\u0022name_en\u0022:\u0022Bulgaria\u0022,\u0022code\u0022:\u0022BGR\u0022},{\u0022name_en\u0022:\u0022Burkina Faso\u0022,\u0022code\u0022:\u0022BFA\u0022},{\u0022name_en\u0022:\u0022Burundi\u0022,\u0022code\u0022:\u0022BDI\u0022},{\u0022name_en\u0022:\u0022Cambodia\u0022,\u0022code\u0022:\u0022KHM\u0022},{\u0022name_en\u0022:\u0022Cameroon\u0022,\u0022code\u0022:\u0022CMR\u0022},{\u0022name_en\u0022:\u0022Canada\u0022,\u0022code\u0022:\u0022CAN\u0022},{\u0022name_en\u0022:\u0022Cape Verde\u0022,\u0022code\u0022:\u0022CPV\u0022},{\u0022name_en\u0022:\u0022Cayman Islands\u0022,\u0022code\u0022:\u0022CYM\u0022},{\u0022name_en\u0022:\u0022Central African Republic\u0022,\u0022code\u0022:\u0022CAF\u0022},{\u0022name_en\u0022:\u0022Chad\u0022,\u0022code\u0022:\u0022TCD\u0022},{\u0022name_en\u0022:\u0022Chile\u0022,\u0022code\u0022:\u0022CHL\u0022},{\u0022name_en\u0022:\u0022Hong Kong\u0022,\u0022code\u0022:\u0022HK\u0022},{\u0022name_en\u0022:\u0022Macau\u0022,\u0022code\u0022:\u0022MAC\u0022},{\u0022name_en\u0022:\u0022China\u0022,\u0022code\u0022:\u0022CN\u0022},{\u0022name_en\u0022:\u0022Taiwan\u0022,\u0022code\u0022:\u0022TW\u0022},{\u0022name_en\u0022:\u0022Christmas Islands\u0022,\u0022code\u0022:\u0022CXR\u0022},{\u0022name_en\u0022:\u0022Cocos (keeling) Islands\u0022,\u0022code\u0022:\u0022CCK\u0022},{\u0022name_en\u0022:\u0022Colombia\u0022,\u0022code\u0022:\u0022COL\u0022},{\u0022name_en\u0022:\u0022Comoros\u0022,\u0022code\u0022:\u0022COM\u0022},{\u0022name_en\u0022:\u0022Congo\u0022,\u0022code\u0022:\u0022COG\u0022},{\u0022name_en\u0022:\u0022Congo (Congo-Kinshasa)\u0022,\u0022code\u0022:\u0022COD\u0022},{\u0022name_en\u0022:\u0022Cook Islands\u0022,\u0022code\u0022:\u0022COK\u0022},{\u0022name_en\u0022:\u0022Costa Rica\u0022,\u0022code\u0022:\u0022CRI\u0022},{\u0022name_en\u0022:\u0022Cote D\\u0027Ivoire\u0022,\u0022code\u0022:\u0022CIV\u0022},{\u0022name_en\u0022:\u0022Croatia\u0022,\u0022code\u0022:\u0022HRV\u0022},{\u0022name_en\u0022:\u0022Cuba\u0022,\u0022code\u0022:\u0022CUB\u0022},{\u0022name_en\u0022:\u0022Cyprus\u0022,\u0022code\u0022:\u0022CYP\u0022},{\u0022name_en\u0022:\u0022Czech\u0022,\u0022code\u0022:\u0022CZE\u0022},{\u0022name_en\u0022:\u0022Denmark\u0022,\u0022code\u0022:\u0022DNK\u0022},{\u0022name_en\u0022:\u0022Djibouti\u0022,\u0022code\u0022:\u0022DJI\u0022},{\u0022name_en\u0022:\u0022Dominica\u0022,\u0022code\u0022:\u0022DMA\u0022},{\u0022name_en\u0022:\u0022Dominican Republic\u0022,\u0022code\u0022:\u0022DOM\u0022},{\u0022name_en\u0022:\u0022East Timor\u0022,\u0022code\u0022:\u0022TLS\u0022},{\u0022name_en\u0022:\u0022Ecuador\u0022,\u0022code\u0022:\u0022ECU\u0022},{\u0022name_en\u0022:\u0022Egypt\u0022,\u0022code\u0022:\u0022EGY\u0022},{\u0022name_en\u0022:\u0022El Salvador\u0022,\u0022code\u0022:\u0022SLV\u0022},{\u0022name_en\u0022:\u0022Equatorial Guinea\u0022,\u0022code\u0022:\u0022GNQ\u0022},{\u0022name_en\u0022:\u0022Eritrea\u0022,\u0022code\u0022:\u0022ERI\u0022},{\u0022name_en\u0022:\u0022Estonia\u0022,\u0022code\u0022:\u0022EST\u0022},{\u0022name_en\u0022:\u0022Ethiopia\u0022,\u0022code\u0022:\u0022ETH\u0022},{\u0022name_en\u0022:\u0022Faroe\u0022,\u0022code\u0022:\u0022FRO\u0022},{\u0022name_en\u0022:\u0022Fiji\u0022,\u0022code\u0022:\u0022FJI\u0022},{\u0022name_en\u0022:\u0022Finland\u0022,\u0022code\u0022:\u0022FIN\u0022},{\u0022name_en\u0022:\u0022France\u0022,\u0022code\u0022:\u0022FRA\u0022},{\u0022name_en\u0022:\u0022French Guiana\u0022,\u0022code\u0022:\u0022GUF\u0022},{\u0022name_en\u0022:\u0022French Polynesia\u0022,\u0022code\u0022:\u0022PYF\u0022},{\u0022name_en\u0022:\u0022Gabon\u0022,\u0022code\u0022:\u0022GAB\u0022},{\u0022name_en\u0022:\u0022Gambia\u0022,\u0022code\u0022:\u0022GMB\u0022},{\u0022name_en\u0022:\u0022Georgia\u0022,\u0022code\u0022:\u0022GEO\u0022},{\u0022name_en\u0022:\u0022Germany\u0022,\u0022code\u0022:\u0022DEU\u0022},{\u0022name_en\u0022:\u0022Ghana\u0022,\u0022code\u0022:\u0022GHA\u0022},{\u0022name_en\u0022:\u0022Gibraltar\u0022,\u0022code\u0022:\u0022GIB\u0022},{\u0022name_en\u0022:\u0022Greece\u0022,\u0022code\u0022:\u0022GRC\u0022},{\u0022name_en\u0022:\u0022Greenland\u0022,\u0022code\u0022:\u0022GRL\u0022},{\u0022name_en\u0022:\u0022Grenada\u0022,\u0022code\u0022:\u0022GRD\u0022},{\u0022name_en\u0022:\u0022Guadeloupe\u0022,\u0022code\u0022:\u0022GLP\u0022},{\u0022name_en\u0022:\u0022Guam\u0022,\u0022code\u0022:\u0022GUM\u0022},{\u0022name_en\u0022:\u0022Guatemala\u0022,\u0022code\u0022:\u0022GTM\u0022},{\u0022name_en\u0022:\u0022Guernsey\u0022,\u0022code\u0022:\u0022GGY\u0022},{\u0022name_en\u0022:\u0022Guinea\u0022,\u0022code\u0022:\u0022GIN\u0022},{\u0022name_en\u0022:\u0022Guinea-Bissau\u0022,\u0022code\u0022:\u0022GNB\u0022},{\u0022name_en\u0022:\u0022Guyana\u0022,\u0022code\u0022:\u0022GUY\u0022},{\u0022name_en\u0022:\u0022Haiti\u0022,\u0022code\u0022:\u0022HTI\u0022},{\u0022name_en\u0022:\u0022Honduras\u0022,\u0022code\u0022:\u0022HND\u0022},{\u0022name_en\u0022:\u0022Hungary\u0022,\u0022code\u0022:\u0022HUN\u0022},{\u0022name_en\u0022:\u0022Iceland\u0022,\u0022code\u0022:\u0022ISL\u0022},{\u0022name_en\u0022:\u0022India\u0022,\u0022code\u0022:\u0022IND\u0022},{\u0022name_en\u0022:\u0022Indonesia\u0022,\u0022code\u0022:\u0022IDN\u0022},{\u0022name_en\u0022:\u0022Iran\u0022,\u0022code\u0022:\u0022IRN\u0022},{\u0022name_en\u0022:\u0022Iraq\u0022,\u0022code\u0022:\u0022IRQ\u0022},{\u0022name_en\u0022:\u0022Ireland\u0022,\u0022code\u0022:\u0022IRL\u0022},{\u0022name_en\u0022:\u0022Isle of Man\u0022,\u0022code\u0022:\u0022IMN\u0022},{\u0022name_en\u0022:\u0022Israel\u0022,\u0022code\u0022:\u0022ISR\u0022},{\u0022name_en\u0022:\u0022Italy\u0022,\u0022code\u0022:\u0022ITA\u0022},{\u0022name_en\u0022:\u0022Jamaica\u0022,\u0022code\u0022:\u0022JAM\u0022},{\u0022name_en\u0022:\u0022Japan\u0022,\u0022code\u0022:\u0022JPN\u0022},{\u0022name_en\u0022:\u0022Jersey\u0022,\u0022code\u0022:\u0022JEY\u0022},{\u0022name_en\u0022:\u0022Jordan\u0022,\u0022code\u0022:\u0022JOR\u0022},{\u0022name_en\u0022:\u0022Kazakhstan\u0022,\u0022code\u0022:\u0022KAZ\u0022},{\u0022name_en\u0022:\u0022Kenya\u0022,\u0022code\u0022:\u0022KEN\u0022},{\u0022name_en\u0022:\u0022Kiribati\u0022,\u0022code\u0022:\u0022KIR\u0022},{\u0022name_en\u0022:\u0022Kuwait\u0022,\u0022code\u0022:\u0022KWT\u0022},{\u0022name_en\u0022:\u0022Kyrgyzstan\u0022,\u0022code\u0022:\u0022KGZ\u0022},{\u0022name_en\u0022:\u0022Laos\u0022,\u0022code\u0022:\u0022LAO\u0022},{\u0022name_en\u0022:\u0022Latvia\u0022,\u0022code\u0022:\u0022LVA\u0022},{\u0022name_en\u0022:\u0022Lebanon\u0022,\u0022code\u0022:\u0022LBN\u0022},{\u0022name_en\u0022:\u0022Lesotho\u0022,\u0022code\u0022:\u0022LSO\u0022},{\u0022name_en\u0022:\u0022Liberia\u0022,\u0022code\u0022:\u0022LBR\u0022},{\u0022name_en\u0022:\u0022Libya\u0022,\u0022code\u0022:\u0022LBY\u0022},{\u0022name_en\u0022:\u0022Liechtenstein\u0022,\u0022code\u0022:\u0022LIE\u0022},{\u0022name_en\u0022:\u0022Lithuania\u0022,\u0022code\u0022:\u0022LTU\u0022},{\u0022name_en\u0022:\u0022Luxembourg\u0022,\u0022code\u0022:\u0022LUX\u0022},{\u0022name_en\u0022:\u0022Macedonia\u0022,\u0022code\u0022:\u0022MK\u0022},{\u0022name_en\u0022:\u0022Madagascar\u0022,\u0022code\u0022:\u0022MDG\u0022},{\u0022name_en\u0022:\u0022Malawi\u0022,\u0022code\u0022:\u0022MWI\u0022},{\u0022name_en\u0022:\u0022Malaysia\u0022,\u0022code\u0022:\u0022MYS\u0022},{\u0022name_en\u0022:\u0022Maldives\u0022,\u0022code\u0022:\u0022MDV\u0022},{\u0022name_en\u0022:\u0022Mali\u0022,\u0022code\u0022:\u0022MLI\u0022},{\u0022name_en\u0022:\u0022Malta\u0022,\u0022code\u0022:\u0022MLT\u0022},{\u0022name_en\u0022:\u0022Marshall Islands\u0022,\u0022code\u0022:\u0022MHL\u0022},{\u0022name_en\u0022:\u0022Martinique\u0022,\u0022code\u0022:\u0022MTQ\u0022},{\u0022name_en\u0022:\u0022Mauritania\u0022,\u0022code\u0022:\u0022MRT\u0022},{\u0022name_en\u0022:\u0022Mauritius\u0022,\u0022code\u0022:\u0022MUS\u0022},{\u0022name_en\u0022:\u0022Mayotte\u0022,\u0022code\u0022:\u0022MYT\u0022},{\u0022name_en\u0022:\u0022Mexico\u0022,\u0022code\u0022:\u0022MEX\u0022},{\u0022name_en\u0022:\u0022Micronesia\u0022,\u0022code\u0022:\u0022FSM\u0022},{\u0022name_en\u0022:\u0022Moldova\u0022,\u0022code\u0022:\u0022MDA\u0022},{\u0022name_en\u0022:\u0022Monaco\u0022,\u0022code\u0022:\u0022MCO\u0022},{\u0022name_en\u0022:\u0022Mongolia\u0022,\u0022code\u0022:\u0022MNG\u0022},{\u0022name_en\u0022:\u0022Montenegro\u0022,\u0022code\u0022:\u0022ME\u0022},{\u0022name_en\u0022:\u0022Montserrat\u0022,\u0022code\u0022:\u0022MSR\u0022},{\u0022name_en\u0022:\u0022Morocco\u0022,\u0022code\u0022:\u0022MAR\u0022},{\u0022name_en\u0022:\u0022Mozambique\u0022,\u0022code\u0022:\u0022MOZ\u0022},{\u0022name_en\u0022:\u0022Myanmar\u0022,\u0022code\u0022:\u0022MMR\u0022},{\u0022name_en\u0022:\u0022Namibia\u0022,\u0022code\u0022:\u0022NAM\u0022},{\u0022name_en\u0022:\u0022Nauru\u0022,\u0022code\u0022:\u0022NRU\u0022},{\u0022name_en\u0022:\u0022Nepal\u0022,\u0022code\u0022:\u0022NPL\u0022},{\u0022name_en\u0022:\u0022Netherlands\u0022,\u0022code\u0022:\u0022NLD\u0022},{\u0022name_en\u0022:\u0022Netherlands Antilles\u0022,\u0022code\u0022:\u0022ANT\u0022},{\u0022name_en\u0022:\u0022New Caledonia\u0022,\u0022code\u0022:\u0022NCL\u0022},{\u0022name_en\u0022:\u0022New Zealand\u0022,\u0022code\u0022:\u0022NZL\u0022},{\u0022name_en\u0022:\u0022Nicaragua\u0022,\u0022code\u0022:\u0022NIC\u0022},{\u0022name_en\u0022:\u0022Niger\u0022,\u0022code\u0022:\u0022NER\u0022},{\u0022name_en\u0022:\u0022Nigeria\u0022,\u0022code\u0022:\u0022NGA\u0022},{\u0022name_en\u0022:\u0022Niue\u0022,\u0022code\u0022:\u0022NIU\u0022},{\u0022name_en\u0022:\u0022Norfolk Island\u0022,\u0022code\u0022:\u0022NFK\u0022},{\u0022name_en\u0022:\u0022North Korea\u0022,\u0022code\u0022:\u0022PRK\u0022},{\u0022name_en\u0022:\u0022Northern Mariana Islands\u0022,\u0022code\u0022:\u0022MNP\u0022},{\u0022name_en\u0022:\u0022Norway\u0022,\u0022code\u0022:\u0022NOR\u0022},{\u0022name_en\u0022:\u0022Oman\u0022,\u0022code\u0022:\u0022OMN\u0022},{\u0022name_en\u0022:\u0022Pakistan\u0022,\u0022code\u0022:\u0022PAK\u0022},{\u0022name_en\u0022:\u0022Palau\u0022,\u0022code\u0022:\u0022PLW\u0022},{\u0022name_en\u0022:\u0022Palestine\u0022,\u0022code\u0022:\u0022PSE\u0022},{\u0022name_en\u0022:\u0022Panama\u0022,\u0022code\u0022:\u0022PAN\u0022},{\u0022name_en\u0022:\u0022Papua New Guinea\u0022,\u0022code\u0022:\u0022PNG\u0022},{\u0022name_en\u0022:\u0022Paraguay\u0022,\u0022code\u0022:\u0022PRY\u0022},{\u0022name_en\u0022:\u0022Peru\u0022,\u0022code\u0022:\u0022PER\u0022},{\u0022name_en\u0022:\u0022Philippines\u0022,\u0022code\u0022:\u0022PHL\u0022},{\u0022name_en\u0022:\u0022Pitcairn Islands\u0022,\u0022code\u0022:\u0022PCN\u0022},{\u0022name_en\u0022:\u0022Poland\u0022,\u0022code\u0022:\u0022POL\u0022},{\u0022name_en\u0022:\u0022Portugal\u0022,\u0022code\u0022:\u0022PRT\u0022},{\u0022name_en\u0022:\u0022Puerto Rico\u0022,\u0022code\u0022:\u0022PRI\u0022},{\u0022name_en\u0022:\u0022Qatar\u0022,\u0022code\u0022:\u0022QAT\u0022},{\u0022name_en\u0022:\u0022Reunion\u0022,\u0022code\u0022:\u0022REU\u0022},{\u0022name_en\u0022:\u0022Romania\u0022,\u0022code\u0022:\u0022ROU\u0022},{\u0022name_en\u0022:\u0022Russia\u0022,\u0022code\u0022:\u0022RUS\u0022},{\u0022name_en\u0022:\u0022Rwanda\u0022,\u0022code\u0022:\u0022RWA\u0022},{\u0022name_en\u0022:\u0022Saint Helena\u0022,\u0022code\u0022:\u0022SHN\u0022},{\u0022name_en\u0022:\u0022Saint Kitts-Nevis\u0022,\u0022code\u0022:\u0022KNA\u0022},{\u0022name_en\u0022:\u0022Saint Lucia\u0022,\u0022code\u0022:\u0022LCA\u0022},{\u0022name_en\u0022:\u0022Saint Vincent and the Grenadines\u0022,\u0022code\u0022:\u0022VCT\u0022},{\u0022name_en\u0022:\u0022Samoa\u0022,\u0022code\u0022:\u0022WSM\u0022},{\u0022name_en\u0022:\u0022San Marino\u0022,\u0022code\u0022:\u0022SMR\u0022},{\u0022name_en\u0022:\u0022Sao Tome and Principe\u0022,\u0022code\u0022:\u0022STP\u0022},{\u0022name_en\u0022:\u0022Saudi Arabia\u0022,\u0022code\u0022:\u0022SAU\u0022},{\u0022name_en\u0022:\u0022Scotland\u0022,\u0022code\u0022:\u0022SCT\u0022},{\u0022name_en\u0022:\u0022Senegal\u0022,\u0022code\u0022:\u0022SEN\u0022},{\u0022name_en\u0022:\u0022Serbia\u0022,\u0022code\u0022:\u0022SRB\u0022},{\u0022name_en\u0022:\u0022Seychelles\u0022,\u0022code\u0022:\u0022SYC\u0022},{\u0022name_en\u0022:\u0022Sierra Leone\u0022,\u0022code\u0022:\u0022SLE\u0022},{\u0022name_en\u0022:\u0022Singapore\u0022,\u0022code\u0022:\u0022SGP\u0022},{\u0022name_en\u0022:\u0022Slovakia\u0022,\u0022code\u0022:\u0022SVK\u0022},{\u0022name_en\u0022:\u0022Slovenia\u0022,\u0022code\u0022:\u0022SVN\u0022},{\u0022name_en\u0022:\u0022Solomon Islands\u0022,\u0022code\u0022:\u0022SLB\u0022},{\u0022name_en\u0022:\u0022Somalia\u0022,\u0022code\u0022:\u0022SOM\u0022},{\u0022name_en\u0022:\u0022South Africa\u0022,\u0022code\u0022:\u0022ZAF\u0022},{\u0022name_en\u0022:\u0022South Korea\u0022,\u0022code\u0022:\u0022KOR\u0022},{\u0022name_en\u0022:\u0022South Sudan\u0022,\u0022code\u0022:\u0022SSD\u0022},{\u0022name_en\u0022:\u0022Spain\u0022,\u0022code\u0022:\u0022ESP\u0022},{\u0022name_en\u0022:\u0022Sri Lanka\u0022,\u0022code\u0022:\u0022LKA\u0022},{\u0022name_en\u0022:\u0022Sudan\u0022,\u0022code\u0022:\u0022SDN\u0022},{\u0022name_en\u0022:\u0022Suriname\u0022,\u0022code\u0022:\u0022SUR\u0022},{\u0022name_en\u0022:\u0022Swaziland\u0022,\u0022code\u0022:\u0022SWZ\u0022},{\u0022name_en\u0022:\u0022Sweden\u0022,\u0022code\u0022:\u0022SWE\u0022},{\u0022name_en\u0022:\u0022Switzerland\u0022,\u0022code\u0022:\u0022CHE\u0022},{\u0022name_en\u0022:\u0022Syria\u0022,\u0022code\u0022:\u0022SYR\u0022},{\u0022name_en\u0022:\u0022Tajikistan\u0022,\u0022code\u0022:\u0022TJK\u0022},{\u0022name_en\u0022:\u0022Tanzania\u0022,\u0022code\u0022:\u0022TZA\u0022},{\u0022name_en\u0022:\u0022Thailand\u0022,\u0022code\u0022:\u0022THA\u0022},{\u0022name_en\u0022:\u0022The British Virgin Islands\u0022,\u0022code\u0022:\u0022VGB\u0022},{\u0022name_en\u0022:\u0022The Turks and Caicos Islands\u0022,\u0022code\u0022:\u0022TCA\u0022},{\u0022name_en\u0022:\u0022The United States Virgin Islands\u0022,\u0022code\u0022:\u0022VIR\u0022},{\u0022name_en\u0022:\u0022Togo\u0022,\u0022code\u0022:\u0022TGO\u0022},{\u0022name_en\u0022:\u0022Tokelau\u0022,\u0022code\u0022:\u0022TKL\u0022},{\u0022name_en\u0022:\u0022Tonga\u0022,\u0022code\u0022:\u0022TON\u0022},{\u0022name_en\u0022:\u0022Trinidad and Tobago\u0022,\u0022code\u0022:\u0022TTO\u0022},{\u0022name_en\u0022:\u0022Tunisia\u0022,\u0022code\u0022:\u0022TUN\u0022},{\u0022name_en\u0022:\u0022Turkey\u0022,\u0022code\u0022:\u0022TUR\u0022},{\u0022name_en\u0022:\u0022Turkmenistan\u0022,\u0022code\u0022:\u0022TKM\u0022},{\u0022name_en\u0022:\u0022Tuvalu\u0022,\u0022code\u0022:\u0022TUV\u0022},{\u0022name_en\u0022:\u0022Uganda\u0022,\u0022code\u0022:\u0022UGA\u0022},{\u0022name_en\u0022:\u0022Ukraine\u0022,\u0022code\u0022:\u0022UKR\u0022},{\u0022name_en\u0022:\u0022United Arab Emirates\u0022,\u0022code\u0022:\u0022ARE\u0022},{\u0022name_en\u0022:\u0022United Kingdom\u0022,\u0022code\u0022:\u0022GBR\u0022},{\u0022name_en\u0022:\u0022United States\u0022,\u0022code\u0022:\u0022USA\u0022},{\u0022name_en\u0022:\u0022Uruguay\u0022,\u0022code\u0022:\u0022URY\u0022},{\u0022name_en\u0022:\u0022Uzbekistan\u0022,\u0022code\u0022:\u0022UZB\u0022},{\u0022name_en\u0022:\u0022Vanuatu\u0022,\u0022code\u0022:\u0022VUT\u0022},{\u0022name_en\u0022:\u0022Vatican City\u0022,\u0022code\u0022:\u0022VAT\u0022},{\u0022name_en\u0022:\u0022Venezuela\u0022,\u0022code\u0022:\u0022VEN\u0022},{\u0022name_en\u0022:\u0022Vietnam\u0022,\u0022code\u0022:\u0022VNM\u0022},{\u0022name_en\u0022:\u0022Wales\u0022,\u0022code\u0022:\u0022WLS\u0022},{\u0022name_en\u0022:\u0022Wallis and Futuna\u0022,\u0022code\u0022:\u0022WLF\u0022},{\u0022name_en\u0022:\u0022Western Sahara\u0022,\u0022code\u0022:\u0022EH\u0022},{\u0022name_en\u0022:\u0022Yemen\u0022,\u0022code\u0022:\u0022YEM\u0022},{\u0022name_en\u0022:\u0022Zambia\u0022,\u0022code\u0022:\u0022ZMB\u0022},{\u0022name_en\u0022:\u0022Zimbabwe\u0022,\u0022code\u0022:\u0022ZWE\u0022}]","default_region":"USA"},"user":{"uid":0,"permissionsHash":"feb1bdff0e3f437a3659ff17558e0d53827c96d08ea87f3cbcf11c9a724d332c"}}</script>
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_A_PxGf3EV6hVEdQpj0xw-cTsSsFJyKhlHKANlKZNsWo.js"></script>
+<script src="/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+<script src="/sites/default/files/js/js_hPHx0hHMF8A80VgyAg4WVfxZ3yYhC1yrwoPf7WtK078.js"></script>
+<script src="//www.google.com/recaptcha/api.js?hl=en&amp;render=explicit&amp;onload=drupalRecaptchaOnload" async defer></script>
+
+  </head>
+  <body class="path-home path-frontpage page-node-type-landing-page">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXKFMJQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<header id="comHeader" role="header">
+  <div class="header-highlighted">  <div>
+    <div id="block-cookie">
+  
+    
+      
+            <div><div class="cookie-privacy">
+<div class="cookie-privacy_content">
+<p>This website uses cookies to ensure you get the best experience. By continuing to browse the site, you agree to our use of cookies. Learn more about <a href="/cookie-usage" target="_self">Use of Cookies</a> and <a href="/privacy-policy" target="_self">Privacy Policy</a>.</p>
+</div>
+<button class="cookie-privacy_close">Close</button></div>
+</div>
+      
+  </div>
+
+  </div>
+</div>
+  <div class="header-top">  <div>
+    <nav role="navigation" aria-labelledby="block-topheadermenu-menu" id="block-topheadermenu">
+            
+  <h2 class="visually-hidden" id="block-topheadermenu-menu">顶部菜单</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/download-center" data-drupal-link-system-path="node/983">Downloads</a>
+              </li>
+          <li>
+        <a href="/virtual-warehouse" data-drupal-link-system-path="node/636">Virtual Warehouse</a>
+              </li>
+          <li>
+        <a href="/events" data-drupal-link-system-path="node/76">Events</a>
+              </li>
+          <li>
+        <a href="/contact/global-locations" data-drupal-link-system-path="node/303">Global Locations</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-siteswitcher-2">
+  
+    
+      
+            <div><div class="header-tools language-switcher">
+<div class="language-switcher_icon">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-06/lang_switcher.svg" alt="lang_switcher" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+<div class="language-switcher_icon-hover">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-06/lang_switcher_hover.svg" alt="Language Switcher" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-useraccountmenu-menu" id="block-useraccountmenu">
+            
+  <h2 class="visually-hidden" id="block-useraccountmenu-menu">User account menu</h2>
+  
+
+        
+  <div class="not-signed">
+  <div class="user-icon">Log in</div>
+              <ul class="not-signed">
+              <li>
+        <span class="not-signed">Log in</span>
+              </li>
+      </ul>
+    
+
+</div>
+
+  </nav>
+
+  </div>
+</div>
+  <div class="header">  <div>
+    <div id="block-sitebranding">
+  
+    
+        <a href="/" rel="home">
+      <img src="/themes/custom/hairobotics/logo.svg" alt="HAI ROBOTICS" />
+    </a>
+      
+</div>
+<nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            
+  <h2 class="visually-hidden" id="block-mainnavigation-menu">主导航</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Products</span>
+                                <div class="main-navigation-sub_wrapper main-navigation-sub_2">
+        <div class="main-navigation-sub_back"><span>Back</span></div>
+        <div class="main-navigation-sub">
+          <div class="main-navigation-sub_first">
+            <h2></h2>
+            <p class="main-navigation-sub_first_link"><a href="javascript:void(0);">Overview</a></p>
+          </div>
+          <ul>
+              <li>
+        <span>HaiPick Systems</span>
+                                <div class="main-navigation-sub_wrapper main-navigation-sub_3">
+        <div class="main-navigation-sub_back"><span>Back</span></div>
+        <div class="main-navigation-sub">
+          <div class="main-navigation-sub_first">
+            <h2></h2>
+            <p class="main-navigation-sub_first_link"><a href="javascript:void(0);">Overview</a></p>
+          </div>
+          <ul>
+              <li>
+        <a href="/products/haipick-system-1" data-drupal-link-system-path="node/741">HaiPick System 1</a>
+              </li>
+          <li>
+        <a href="/products/haipick-system-2" data-drupal-link-system-path="node/722">HaiPick System 2</a>
+              </li>
+          <li>
+        <a href="/products/haipick-system-3" data-drupal-link-system-path="node/715">HaiPick System 3</a>
+              </li>
+              </ul></div></div>
+      
+              </li>
+          <li>
+        <span>HaiPick Robots</span>
+                                <div class="main-navigation-sub_wrapper main-navigation-sub_3">
+        <div class="main-navigation-sub_back"><span>Back</span></div>
+        <div class="main-navigation-sub">
+          <div class="main-navigation-sub_first">
+            <h2></h2>
+            <p class="main-navigation-sub_first_link"><a href="javascript:void(0);">Overview</a></p>
+          </div>
+          <ul>
+              <li>
+        <a href="/products/haipick-a42" data-drupal-link-system-path="node/45">Multi-layer ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42t" data-drupal-link-system-path="node/46">Telescopic Lift ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a3" data-drupal-link-system-path="node/183">Fork-lifting ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42-e6" data-drupal-link-system-path="node/997">Grappling-hook ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42t-e2" data-drupal-link-system-path="node/706">Telescopic Grappling-Hook ACR</a>
+              </li>
+              </ul></div></div>
+      
+              </li>
+          <li>
+        <a href="/products/haistation" data-drupal-link-system-path="node/195">HaiStation Multi-function Workstations</a>
+              </li>
+          <li>
+        <a href="/products/haiq" data-drupal-link-system-path="node/181">HAI Q Intelligent Software Platform</a>
+              </li>
+          <li>
+        <a href="/products/haicharger" data-drupal-link-system-path="node/222">HaiCharger Smart Charger</a>
+              </li>
+              </ul></div></div>
+      
+              </li>
+          <li>
+        <a href="/solutions" data-drupal-link-system-path="node/305">Industries</a>
+                                <div class="main-navigation-sub_wrapper main-navigation-sub_2">
+        <div class="main-navigation-sub_back"><span>Back</span></div>
+        <div class="main-navigation-sub">
+          <div class="main-navigation-sub_first">
+            <h2></h2>
+            <p class="main-navigation-sub_first_link"><a href="javascript:void(0);">Overview</a></p>
+          </div>
+          <ul>
+              <li>
+        <a href="/solutions/apparel" data-drupal-link-system-path="node/339">Apparel</a>
+              </li>
+          <li>
+        <a href="/solutions/e-commerce" data-drupal-link-system-path="node/341">E-commerce</a>
+              </li>
+          <li>
+        <a href="/solutions/3pl-solutions" data-drupal-link-system-path="node/342">3PL</a>
+              </li>
+          <li>
+        <a href="/solutions/retail" data-drupal-link-system-path="node/338">Retail</a>
+              </li>
+          <li>
+        <a href="/solutions/grocery" data-drupal-link-system-path="node/812">Grocery</a>
+              </li>
+          <li>
+        <a href="/solutions/healthcare" data-drupal-link-system-path="node/340">Healthcare</a>
+              </li>
+          <li>
+        <a href="/solutions/electronics" data-drupal-link-system-path="node/345">Electronics</a>
+              </li>
+          <li>
+        <a href="/solutions/automotive" data-drupal-link-system-path="node/343">Automotive</a>
+              </li>
+              </ul></div></div>
+      
+              </li>
+          <li>
+        <a href="/cases" data-drupal-link-system-path="node/196">Case Studies</a>
+              </li>
+          <li>
+        <span>Resources</span>
+                                <div class="main-navigation-sub_wrapper main-navigation-sub_2">
+        <div class="main-navigation-sub_back"><span>Back</span></div>
+        <div class="main-navigation-sub">
+          <div class="main-navigation-sub_first">
+            <h2></h2>
+            <p class="main-navigation-sub_first_link"><a href="javascript:void(0);">Overview</a></p>
+          </div>
+          <ul>
+              <li>
+        <a href="/blog" data-drupal-link-system-path="node/91">Blogs</a>
+              </li>
+          <li>
+        <a href="/faq-glossary" data-drupal-link-system-path="node/939">FAQ & Glossary</a>
+              </li>
+          <li>
+        <a href="/download-center" data-drupal-link-system-path="node/983">Downloads</a>
+              </li>
+          <li>
+        <a href="/videos" data-drupal-link-system-path="node/662">Videos</a>
+              </li>
+          <li>
+        <a href="/virtual-warehouse" data-drupal-link-system-path="node/636">Virtual Warehouse</a>
+              </li>
+          <li>
+        <a href="/solution-generator" data-drupal-link-system-path="node/727">Solution Generator</a>
+              </li>
+              </ul></div></div>
+      
+              </li>
+          <li>
+        <a href="/partners" data-drupal-link-system-path="node/82">Partners</a>
+              </li>
+          <li>
+        <span>About Us</span>
+                                <div class="main-navigation-sub_wrapper main-navigation-sub_2">
+        <div class="main-navigation-sub_back"><span>Back</span></div>
+        <div class="main-navigation-sub">
+          <div class="main-navigation-sub_first">
+            <h2></h2>
+            <p class="main-navigation-sub_first_link"><a href="javascript:void(0);">Overview</a></p>
+          </div>
+          <ul>
+              <li>
+        <a href="/company" data-drupal-link-system-path="node/321">Who We Are</a>
+              </li>
+          <li>
+        <a href="/our-culture" data-drupal-link-system-path="node/304">Our Culture</a>
+              </li>
+          <li>
+        <a href="/news" data-drupal-link-system-path="node/78">News</a>
+              </li>
+          <li>
+        <a href="/events" data-drupal-link-system-path="node/76">Events & Webinars</a>
+              </li>
+          <li>
+        <a href="/contact/global-locations" data-drupal-link-system-path="node/303">Global Locations</a>
+              </li>
+          <li>
+        <a href="/join-us" data-drupal-link-system-path="node/376">Join Us</a>
+              </li>
+          <li>
+        <a href="/contact" data-drupal-link-system-path="node/330">Contact Us</a>
+              </li>
+              </ul></div></div>
+      
+              </li>
+              </ul>
+      
+
+
+  </nav>
+<div class="hobs-login-form pwd-see" novalidate="novalidate" data-drupal-selector="hobs-login-form" id="block-hobsuserloginblock">
+  
+    
+      <form action="/" method="post" id="hobs-login-form" accept-charset="UTF-8">
+  <div class="title">Log in</div><div class="close">Close</div><div id="login-form-container" class="pwd-see js-form-wrapper form-wrapper" data-drupal-selector="edit-container"><div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name form-no-label">
+      <label for="edit-name" class="visually-hidden js-form-required form-required">Email Address or phone number</label>
+        <input placeholder="Please enter your email address" data-webform-required-error="Please enter your email address" data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="60" maxlength="100" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+<div class="js-form-item form-item js-form-type-password form-item-pass js-form-item-pass form-no-label">
+      <label for="edit-pass" class="visually-hidden js-form-required form-required">Password</label>
+        <input placeholder="Password" data-webform-required-error="Please enter the password" data-drupal-selector="edit-pass" type="password" id="edit-pass" name="pass" size="60" maxlength="50" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div>
+<div class="form-actions login-button js-form-wrapper form-wrapper" data-drupal-selector="edit-action" id="edit-action"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Log in" class="button js-form-submit form-submit" />
+</div>
+<div class="links js-form-wrapper form-wrapper" data-drupal-selector="edit-link" id="edit-link"><a href="/forgot-password" class="forgot-password" target="_blank" data-drupal-selector="edit-forgot-password" id="edit-forgot-password">Forgot password</a><a href="/create-account" class="register" target="_blank" data-drupal-selector="edit-register" id="edit-register">Don't have an account? Create account</a></div>
+<input autocomplete="off" data-drupal-selector="form-zpdh5tetzbcyx-fus7cxigclnscjeevvbbbbc9hznb4" type="hidden" name="form_build_id" value="form-zPDH5tEtzBCyx-FUS7CxigcLNSCJEEVvbbBBC9HzNB4" />
+<input data-drupal-selector="edit-hobs-login-form" type="hidden" name="form_id" value="hobs_login_form" />
+
+</form>
+
+  </div>
+<div id="block-search-button">
+  
+    
+      
+            <div><div class="search-tool">
+<div class="search-icon">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-08/search_icon.svg" alt="search icon" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+<div class="search-icon-hover">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-08/search-blue.svg" alt="search blue" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</div>
+</div>
+
+<div class="search-dropdown">
+<div class="search-field"><input placeholder="Search" type="text" /><div class="search-btn"><a href="/search">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-08/search_icon.svg" alt="search icon" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</a></div>
+
+<div class="close-dropdown-icon">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-08/search_close_icon.svg" alt="search close icon" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+  </div>
+<div id="block-siteswitcher">
+  
+    
+      
+            <div><div class="header-tools language-switcher">
+<div class="language-switcher_icon">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-06/lang_switcher.svg" alt="lang_switcher" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+<div class="language-switcher_icon-hover">
+<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img width="" height="" src="/sites/default/files/2022-06/lang_switcher_hover.svg" alt="Language Switcher" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-contactus-menu" id="block-contactus">
+            
+  <h2 class="visually-hidden" id="block-contactus-menu">Contact us</h2>
+  
+
+        
+              <ul>
+              <li>
+        <a href="/contact" data-drupal-link-system-path="node/330">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="views-element-container" id="block-views-block-site-switching-site-switching-block">
+  <div>
+    
+          <h3>Select Your Country/Region</h3>
+      <span class="langclose"></span>
+        
+          <div><div class="langshift js-view-dom-id-c345db22f563431d3856282129f8e85c5bb22bf3c7f792b2b10535a0a8b25d44">
+  
+  
+  
+
+  
+  
+  
+
+  
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/" class="not-current"><span class="country-desc">Global </span><span class="country-lang">English</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.cn/" class="not-current"><span class="country-desc">China </span><span class="country-lang">简体中文</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/jp/" class="not-current"><span class="country-desc">Japan </span><span class="country-lang">日本語</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/kr/" class="not-current"><span class="country-desc">Korea </span><span class="country-lang">한국어</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/tw/" class="not-current"><span class="country-desc">Taiwan China </span><span class="country-lang">繁體中文</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/vn/" class="not-current"><span class="country-desc">Vietnam </span><span class="country-lang">Tiếng Việt</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/th/" class="not-current"><span class="country-desc">Thailand </span><span class="country-lang">ภาษาไทย</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/my/" class="not-current"><span class="country-desc">Malaysia </span><span class="country-lang">Bahasa Melayu</span> </a></span></div></div>
+          <div class="views-row"><div class="views-field views-field-nothing"><span class="field-content"><a href="https://www.hairobotics.com/id/" class="not-current"><span class="country-desc">Indonesia </span><span class="country-lang">Bahasa Indonesia</span> </a></span></div></div>
+  
+
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+      </div>
+</div>
+
+  </div>
+</div>
+</header>
+
+<div class="page-container">
+    <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+            <div>
+    <div id="block-hairobotics-content">
+  
+    
+      <article role="article" about="/home">
+
+  
+    
+
+  
+  <div>
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div>
+  
+    
+      
+  </div>
+<div style="display: none;">
+  
+    
+      
+<div class="title-landing-page" data-aos="fade-up">
+      <h1>Hai Robotics Homepage</h1>
+  </div>
+
+  </div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--homepage-banner paragraph--view-mode--default paragraph-brand">
+          <div class="paragraph-brand_content swiper" id="paragraph-brand_202">
+        
+<div class="swiper-wrapper paragraph-brand-wrapper" data-num="1">
+                <div class="paragraph paragraph--type--homepage-banner-item paragraph--view-mode--default paragraph-brand-item swiper-slide" data-swiper-autoplay="3000">
+                  <div class="paragraph-brand-item_video">
+          <video preload="auto" autoplay muted playsinline x5-playsinline x-webkit-airplay="true" x5-video-orientation="landscape|portrait" x5-video-player-type="h5" x5-video-player-fullscreen="true" webkit-playsinline loop src="https://cdn.hairobotics.com/video/solution-video-homepage-6m.mp4"></video>
+        </div>
+        <div class="paragraph-brand-item_video_mobile">
+          <video preload="auto" autoplay muted playsinline x5-playsinline x-webkit-airplay="true" x5-video-orientation="landscape|portrait" x5-video-player-type="h5" x5-video-player-fullscreen="true" webkit-playsinline loop src="https://cdn.hairobotics.com/video/solution-video-homepage-6m.mp4"></video>
+        </div>
+            <div class="paragraph-brand-item_image">
+        
+      <div>
+              <div>  <img src="/sites/default/files/2022-07/hairobotics-homepage.png" width="1440" height="700" alt="hai robotics homepage" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+      <div class="paragraph-brand-item_image_mobile">
+        
+      <div>
+              <div>  <img src="/sites/default/files/2022-07/hairobotics-homepage-phone.png" width="750" height="1000" alt="hai robotics company" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+      <div class="paragraph-brand-item_content">
+        <h2 style="color: #FFFFFF;">
+            <div>Next-Gen Warehouse Automation with ACR Systems</div>
+      </h2>
+                  <div class="paragraph-brand-item_content-desc">
+            <div><p>Maximum storage density，Fast throughput，Future-ready flexibility</p>
+</div>
+      </div>
+                          <div class="paragraph-brand-item_content-link">
+            <div><a href="/virtual-warehouse">Explore Your Future Warehouse</a></div>
+      </div>
+              </div>
+      </div>
+
+  </div>
+<div class="swiper-pagination paragraph-brand-pagination"></div>
+<div class="swiper-navigation-wrapper">
+  <div class="swiper-button-next paragraph-brand-button-next"></div>
+  <div class="swiper-button-prev paragraph-brand-button-prev"></div>
+</div>
+
+      </div>
+      </div>
+</div>
+      
+  </div>
+
+<div class="smart-block-wrapper">
+    <div data-smart-content-placeholder="decision-block-32042a85-8586-407f-9b00-c26a14ad8523" class="smart-content-decision-block">
+                
+        <div >
+                             
+                    </div>
+    </div>
+</div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--homepage-products paragraph--view-mode--default paragraph-products">
+          <div class="paragraph-products_title">
+        <div class="paragraph_title">
+            <div>ACR Robots</div>
+      </div>
+        
+            <div><a href="/products">All Products</a></div>
+      
+      </div>
+      <div class="hairobotics-swiper-container">
+        <div class="paragraph-products_content swiper" id="paragraph-products_180">
+          
+<div class="swiper-wrapper paragraph-products-wrapper" data-num="4">
+      <article role="article" about="/products/haipick-a42" class="swiper-slide paragraph-products_content-item-with-title">
+  <div>
+    <div class="paragraph-products_content-item_thumbnail">
+      <a href="/products/haipick-a42">
+        <div class="paragraph-products_content-item_thumbnail-static">
+          
+            <div>  <img src="/sites/default/files/2022-09/haipick-a42-robots-overseas.png" width="670" height="900" alt="HAIPICK A42 Warehouse Robot" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+        </div>
+        <div class="paragraph-products_content-item_thumbnail-hover">
+          
+            <div><img class="remote-image-item" src="https://cdn.hairobotics.com/gif/haipick-a42-overseas.gif" alt="HAIPICK A42 Warehouse Robot" typeof="foaf:Image" />
+</div>
+      
+        </div>
+      </a>
+    </div>
+          <h2><a href="/products/haipick-a42">
+            <div>Multi-Layer ACR</div>
+      </a></h2>
+        <p><a href="/products/haipick-a42">
+<span>HaiPick A42</span>
+</a></p>
+  </div>
+</article>
+
+      <article role="article" about="/products/haipick-a42t" class="swiper-slide paragraph-products_content-item-with-title">
+  <div>
+    <div class="paragraph-products_content-item_thumbnail">
+      <a href="/products/haipick-a42t">
+        <div class="paragraph-products_content-item_thumbnail-static">
+          
+            <div>  <img src="/sites/default/files/2022-09/haipick-a42t-overseas-totes.png" width="670" height="900" alt="HaiPick A42T Warehouse Robot" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+        </div>
+        <div class="paragraph-products_content-item_thumbnail-hover">
+          
+            <div><img class="remote-image-item" src="https://cdn.hairobotics.com/gif/haipick-a42t-overseas-totes.gif" alt="HaiPick A42T Warehouse Robot" typeof="foaf:Image" />
+</div>
+      
+        </div>
+      </a>
+    </div>
+          <h2><a href="/products/haipick-a42t">
+            <div>Telescopic Lift ACR</div>
+      </a></h2>
+        <p><a href="/products/haipick-a42t">
+<span>HaiPick A42T</span>
+</a></p>
+  </div>
+</article>
+
+      <article role="article" about="/products/haipick-a3" class="swiper-slide paragraph-products_content-item-with-title">
+  <div>
+    <div class="paragraph-products_content-item_thumbnail">
+      <a href="/products/haipick-a3">
+        <div class="paragraph-products_content-item_thumbnail-static">
+          
+            <div>  <img src="/sites/default/files/2022-09/haipick-a3-robots-overseas.png" width="670" height="900" alt="HaiPick A3 Warehouse Robot" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+        </div>
+        <div class="paragraph-products_content-item_thumbnail-hover">
+          
+            <div><img class="remote-image-item" src="https://cdn.hairobotics.com/gif/haipick-a3-overseas.gif" alt="HaiPick A3 Warehouse Robot" typeof="foaf:Image" />
+</div>
+      
+        </div>
+      </a>
+    </div>
+          <h2><a href="/products/haipick-a3">
+            <div>Fork-Lifting ACR</div>
+      </a></h2>
+        <p><a href="/products/haipick-a3">
+<span>HaiPick A3</span>
+</a></p>
+  </div>
+</article>
+
+      <article role="article" about="/products/haipick-a42t-e2" class="swiper-slide paragraph-products_content-item-with-title">
+  <div>
+    <div class="paragraph-products_content-item_thumbnail">
+      <a href="/products/haipick-a42t-e2">
+        <div class="paragraph-products_content-item_thumbnail-static">
+          
+            <div>  <img src="/sites/default/files/2023-09/a42t-e2_670x900_3.png" width="670" height="900" alt="Telescopic Grappling-hook ACR" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+        </div>
+        <div class="paragraph-products_content-item_thumbnail-hover">
+          
+            <div><img class="remote-image-item" src="https://cdn.hairobotics.com/products/a42t-e2_670x900_3.png" alt="Telescopic Grappling-hook ACR" typeof="foaf:Image" />
+</div>
+      
+        </div>
+      </a>
+    </div>
+          <h2><a href="/products/haipick-a42t-e2">
+            <div>Telescopic Grappling-hook ACR</div>
+      </a></h2>
+        <p><a href="/products/haipick-a42t-e2">
+<span>HaiPick A42T-E2</span>
+</a></p>
+  </div>
+</article>
+
+  </div>
+<div class="swiper-pagination paragraph-products-pagination"></div>
+
+        </div>
+        <div class="swiper-navigation-wrapper">
+          <div class="swiper-button-next paragraph-products-button-next"></div>
+          <div class="swiper-button-prev paragraph-products-button-prev"></div>
+        </div>
+      </div>
+      </div>
+</div>
+      
+  </div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--our-products paragraph--view-mode--default paragraph-our-products">
+          <div class="paragraph-our-products_title">
+        <h2 class="paragraph_title">
+            <div>ACR-centered Systems</div>
+      </h2>
+        
+      </div>
+              <div class="paragraph-our-products_content_title"></div>
+        <div class="paragraph-our-products_container">
+                      <div class="paragraph-our-products_content">
+              <div class="paragraph-our-products_content-left">
+                <div class="paragraph-our-products_content_link">
+                  <div class="paragraph-our-products_content_link">
+                    <a href="/products/haipick-system-1" class='paragraph-our-products_content_item'>
+                      HaiPick System 1
+                    <span class="paragraph-our-products_content_item-arrow"></span>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="paragraph-our-products_content-right">
+                <div class="paragraph-our-products_content_img">  <img src="/sites/default/files/2024-02/hps1-864x550-en.jpg" width="864" height="550" alt="HaiPick System 1" loading="lazy" typeof="foaf:Image" />
+
+</div>
+                <div class="paragraph-our-products_content_img mobile">  <img src="/sites/default/files/2024-02/hps1-670x416-en.jpg" width="670" height="416" alt="HaiPick System 1" loading="lazy" typeof="foaf:Image" />
+
+</div>
+              </div>
+            </div>
+                      <div class="paragraph-our-products_content">
+              <div class="paragraph-our-products_content-left">
+                <div class="paragraph-our-products_content_link">
+                  <div class="paragraph-our-products_content_link">
+                    <a href="/products/haipick-system-2" class='paragraph-our-products_content_item'>
+                      HaiPick System 2
+                    <span class="paragraph-our-products_content_item-arrow"></span>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="paragraph-our-products_content-right">
+                <div class="paragraph-our-products_content_img">  <img src="/sites/default/files/2024-02/hps2-864x550-en.jpg" width="864" height="550" alt="HaiPick System 2" loading="lazy" typeof="foaf:Image" />
+
+</div>
+                <div class="paragraph-our-products_content_img mobile">  <img src="/sites/default/files/2024-02/hps2-670x416-en.jpg" width="670" height="416" alt="HaiPick System 2" loading="lazy" typeof="foaf:Image" />
+
+</div>
+              </div>
+            </div>
+                      <div class="paragraph-our-products_content">
+              <div class="paragraph-our-products_content-left">
+                <div class="paragraph-our-products_content_link">
+                  <div class="paragraph-our-products_content_link">
+                    <a href="/products/haipick-system-3" class='paragraph-our-products_content_item'>
+                      HaiPick System 3
+                    <span class="paragraph-our-products_content_item-arrow"></span>
+                  </a>
+                </div>
+                </div>
+              </div>
+              <div class="paragraph-our-products_content-right">
+                <div class="paragraph-our-products_content_img">  <img src="/sites/default/files/2024-02/hps3-864x550-en.jpg" width="864" height="550" alt="HaiPick System 3" loading="lazy" typeof="foaf:Image" />
+
+</div>
+                <div class="paragraph-our-products_content_img mobile">  <img src="/sites/default/files/2024-02/hps3-670x416-en.jpg" width="670" height="416" alt="HaiPick System 3" loading="lazy" typeof="foaf:Image" />
+
+</div>
+              </div>
+            </div>
+                  </div>
+        </div>
+            </div>
+</div>
+      
+  </div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--our-solutions-block paragraph--view-mode--default">
+          
+  <div class="our-solutions-title-wrapper">
+    <div class="our-solutions-title">Industry-Focused Warehouse Automation Solutions</div>
+  </div>
+
+<div class="industries-container">
+  <div class="industries">
+          <div class="views-row">
+        <div about="/taxonomy/term/10" class="industries-item_right">
+  <a href="/solutions/apparel">
+    
+            <div>  <img src="/sites/default/files/2022-06/cion02.png" width="48" height="48" alt="fashion warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>Apparel</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2022-12/fashion-apparel-small.jpg" width="864" height="540" alt="fashion warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Increase storage density by 80-400% and space utilization rate.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/11" class="industries-item_right">
+  <a href="/solutions/e-commerce">
+    
+            <div>  <img src="/sites/default/files/2022-06/cion03.png" width="48" height="48" alt="E-commerce" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>E-commerce</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2022-12/e-commerce-small.jpg" width="864" height="540" alt="e-commerce warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Easy to expand, transform, and relocate, quick response to market demands, and business changes.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/19" class="industries-item_right">
+  <a href="/solutions/3pl-solutions">
+    
+            <div>  <img src="/sites/default/files/2022-06/cion01.png" width="48" height="48" alt="3PL warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>3PL</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2022-12/3pl.jpg" width="864" height="540" alt="3PL warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Increase operational efficiency by 3-4 times per worker, working accuracy 99.99%.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/12" class="industries-item_right">
+  <a href="/solutions/retail">
+    
+            <div>  <img src="/sites/default/files/2024-02/grocery-2.png" width="60" height="60" alt="Retail" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>Retail</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2024-02/retail_864x540.jpg" width="864" height="540" alt="retail logistics solutions" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Support 2B, 2C, bonded warehouse, and other businesses to meet diverse needs.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/416" class="industries-item_right">
+  <a href="/solutions/grocery">
+    
+            <div>  <img src="/sites/default/files/2024-02/grocery_0.png" width="60" height="60" alt="grocery" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>Grocery</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2024-02/retail-small.jpg" width="864" height="540" alt="grocery" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Discover the power of our ACR solutions – your key to conquering the challenges of modern grocery fulfillment.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/20" class="industries-item_right">
+  <a href="/solutions/healthcare">
+    
+            <div>  <img src="/sites/default/files/2022-06/cion06.png" width="48" height="48" alt="Healthcare" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>Healthcare</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2022-12/healthcare-small.jpg" width="864" height="540" alt="healthcare" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Optimize operation procedures, improve storage efficiency, and shorten investment return cycles.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/18" class="industries-item_right">
+  <a href="/solutions/electronics">
+    
+            <div>  <img src="/sites/default/files/2022-06/Frame%20325.png" width="48" height="48" alt="Electronics" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>Electronics</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2022-12/electronics-small.jpg" width="864" height="540" alt="electronics" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Flexibly respond to customized production requirements and facilitate efficient manufacturing.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+          <div class="views-row">
+        <div about="/taxonomy/term/21" class="industries-item_right">
+  <a href="/solutions/automotive">
+    
+            <div>  <img src="/sites/default/files/2022-06/Frame%20327.png" width="48" height="48" alt="Automotive" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <span class="industries-item_right-title">
+            <div>Automotive</div>
+      </span>
+    <span class="industries-item_right-icons"></span>
+  </a>
+</div>
+<div class="industries-item_left">
+  <div class="industries-item_left-in">
+    
+            <div>  <img src="/sites/default/files/2022-12/automotive-small.jpg" width="864" height="540" alt="automotive" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      
+    <div class="industries-item_left_desc">
+            <div><p>Reduce operating costs and meet diverse production and industry scenarios.</p>
+</div>
+      </div>
+  </div>
+</div>
+
+      </div>
+      </div>
+</div>
+
+
+      </div>
+</div>
+      
+  </div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--partner-show paragraph--view-mode--default paragraph-common paragraph-common_partner-show paragraph-common_full-screen" id="anchorPartnerShow">
+          <h2 class="paragraph_title">
+            <div>Trusted by Industry Leaders and Renowned Global Brands</div>
+      </h2>
+      <div>
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/ge_256x96_0.png" width="256" height="96" alt="GE" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/harvey-norman_256x96.png" width="256" height="96" alt="Harvey Norman" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2024-02/honeywell.png" width="256" height="96" alt="Honeywell" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/lg_256x96_0.png" width="256" height="96" alt="LG" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/maersk_256x96_0.png" width="256" height="96" alt="MAERSK" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/panasonic_256x96_0.png" width="256" height="96" alt="Panasonic" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/philips_256x96_0.png" width="256" height="96" alt="philips" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/sf-dhl-supply-chain-china_256x96_0.png" width="256" height="96" alt="SF DHL" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+        <div class="paragraph paragraph--type--partner-show-item paragraph--view-mode--default">
+          
+      <div>
+              <div>  <img src="/sites/default/files/2023-11/tcl_256x96_0.png" width="256" height="96" alt="TCL" loading="lazy" typeof="foaf:Image" />
+
+</div>
+          </div>
+  
+      </div>
+
+  </div>
+
+      </div>
+</div>
+      
+  </div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--case-block paragraph--view-mode--default paragraph-case">
+          <div class="paragraph_title">
+            <div>Case Studies</div>
+      </div>
+      <div class="hairobotics-swiper-container">
+        <div class="paragraph-case_content swiper" id="paragraph-case_175">
+          
+<div class="swiper-wrapper paragraph-case-wrapper" data-num="7">
+      
+
+<article role="article" about="/cases/jd-logistics" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>JD Logistics</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>California Distribution Center</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>100,000+</div>
+      </h3>
+    <p>
+            <div><p>SKUs Currently Managed</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>240%</div>
+      </h3>
+    <p>
+            <div><p>more vertical storage</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>641.7</div>
+      </h3>
+    <p>
+            <div><p>outbound orders / hour</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>JD Logistics' California distribution center maximizes throughput and operational efficiencies with Hai Robotics' ASRS solution.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2023-06/jd-logistics-logo.png" width="256" height="96" alt="JD Logistics" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/jd-logistics">
+  <div class="case-image-pc">  <img src="/sites/default/files/2023-06/jd-logistics.jpg" width="670" height="548" alt="JD Logistics" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/jd-logistics">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2023-06/jd-logistics_0.jpg" width="670" height="548" alt="JD Logistics" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>JD Logistics' California distribution center maximizes throughput and operational efficiencies with Hai Robotics' ASRS solution.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2023-06/jd-logistics-logo.png" width="256" height="96" alt="JD Logistics" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+      
+
+<article role="article" about="/cases/sf-dhl-apparel" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>SF-DHL Supply Chain</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>Apparel Warehouse</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>20 times</div>
+      </h3>
+    <p>
+            <div><p>inbound efficiency Improved</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>7 days</div>
+      </h3>
+    <p>
+            <div><p>complete deployment</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>160%</div>
+      </h3>
+    <p>
+            <div><p>storage density</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>With Hai Robotics' solution, the company transformed and improved overall operation efficiency, reduced labour costs, and optimized storage density.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/sf-dhl-logo_3.png" width="256" height="96" alt="SF DHL supply chain logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/sf-dhl-apparel">
+  <div class="case-image-pc">  <img src="/sites/default/files/2022-07/sf-dhl-apparel-warehouse.jpg" width="670" height="548" alt="SF-DHL supply chain apparel warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/sf-dhl-apparel">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2022-07/sf-dhl-apparel-warehouse_0.jpg" width="670" height="548" alt="SF-DHL supply chain apparel warehouse robot" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>With Hai Robotics' solution, the company transformed and improved overall operation efficiency, reduced labour costs, and optimized storage density.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/sf-dhl-logo_3.png" width="256" height="96" alt="SF DHL supply chain logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+      
+
+<article role="article" about="/cases/winit-warehouse" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>Winit</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>Cross-border E-commerce Warehouse</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>50,000</div>
+      </h3>
+    <p>
+            <div><p>daily processed pieces</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>99.99%</div>
+      </h3>
+    <p>
+            <div><p>picking accuracy</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>3-4 times</div>
+      </h3>
+    <p>
+            <div><p>improved warehouse efficiency</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>Winit needed to improve its warehouse operational efficiency and reduce costs. Hai Robotics' solution has been applied in the e-commerce industry, providing a mature and stable solution to meet Winit's requirements.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/winit-cross-border-ecommerce-warehouse-logo.png" width="256" height="96" alt="winit logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/winit-warehouse">
+  <div class="case-image-pc">  <img src="/sites/default/files/2022-07/winit-cross-border-ecommerce-warehouse.jpg" width="670" height="548" alt="winit cross border ecommerce warehouse automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/winit-warehouse">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2022-07/winit-cross-border-ecommerce-warehouse_0.jpg" width="670" height="548" alt="winit cross border ecommerce warehouse robot" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>Winit needed to improve its warehouse operational efficiency and reduce costs. Hai Robotics' solution has been applied in the e-commerce industry, providing a mature and stable solution to meet Winit's requirements.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/winit-cross-border-ecommerce-warehouse-logo.png" width="256" height="96" alt="winit logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+      
+
+<article role="article" about="/cases/anta-group-chengdu" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>Anta</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>Apparel Warehouse</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>27,643</div>
+      </h3>
+    <p>
+            <div><p>Storage locations</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>80,000</div>
+      </h3>
+    <p>
+            <div><p>Throughput capacity per day</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>99.99%</div>
+      </h3>
+    <p>
+            <div><p>Picking accuracy</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>Anta is a company in the apparel industry that needed to improve its logistics center to meet the growing market demand. They wanted to automate their warehouse to improve their regional logistics capacity and meet their business needs. They chose to work with Hai Robotics to implement a solution that would help with warehousing, sorting, inventory counting, and more.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/anta-group-regioanl-logistics-center-logo_1.png" width="256" height="96" alt="ANTA group chengdu logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/anta-group-chengdu">
+  <div class="case-image-pc">  <img src="/sites/default/files/2022-08/anta-regional-logistics-center-automation.jpg" width="670" height="548" alt="ANTA group regional logistics center robots" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/anta-group-chengdu">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2022-11/anta-regional-logistics-center-automation-mobile.jpg" width="670" height="548" alt="ANTA group regional logistics center automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>Anta is a company in the apparel industry that needed to improve its logistics center to meet the growing market demand. They wanted to automate their warehouse to improve their regional logistics capacity and meet their business needs. They chose to work with Hai Robotics to implement a solution that would help with warehousing, sorting, inventory counting, and more.</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name"></div>
+        <div class="paragraph-case_content_card-sign_content_position"></div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/anta-group-regioanl-logistics-center-logo_1.png" width="256" height="96" alt="ANTA group chengdu logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+      
+
+<article role="article" about="/cases/philips-appliance-factory" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>Philips Zhuhai</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>Smart Household Appliance Factory</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>8 cases</div>
+      </h3>
+    <p>
+            <div><p>Storage Density Per Square Meter</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>130 cases</div>
+      </h3>
+    <p>
+            <div><p>Outbound/Inbound Efficiency Per Hour</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>99.9%</div>
+      </h3>
+    <p>
+            <div><p>Picking Accuracy</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>"In the future, we will carry out more in-depth cooperation with Hai Robotics to build a benchmark for smart factories and enable intelligent manufacturing."</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name">
+            <div>Thomas Lai</div>
+      </div>
+        <div class="paragraph-case_content_card-sign_content_position">
+            <div>--Senior Manager of Philips Supply Chain in Zhuhai</div>
+      </div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/philips-household-appliance-factory-logo_1.png" width="256" height="96" alt="philips zhuhai household appliance manufacturing factory logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/philips-appliance-factory">
+  <div class="case-image-pc">  <img src="/sites/default/files/2022-07/philips-household-appliance-factory.jpg" width="670" height="548" alt="philips zhuhai household appliance manufacturing factory automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/philips-appliance-factory">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2022-07/philips-household-appliance-factory_0.jpg" width="670" height="548" alt="philips China household appliance manufacturing automated factory" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>"In the future, we will carry out more in-depth cooperation with Hai Robotics to build a benchmark for smart factories and enable intelligent manufacturing."</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name">
+            <div>Thomas Lai</div>
+      </div>
+        <div class="paragraph-case_content_card-sign_content_position">
+            <div>--Senior Manager of Philips Supply Chain in Zhuhai</div>
+      </div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-07/philips-household-appliance-factory-logo_1.png" width="256" height="96" alt="philips zhuhai household appliance manufacturing factory logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+      
+
+<article role="article" about="/cases/geely-lynkco" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>Geely LYNK&amp;CO</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>Assembly Shop KLT Warehouse</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>100 totes/h</div>
+      </h3>
+    <p>
+            <div><p>Conveyor Inbound Workstations Efficiency</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>600 totes/h</div>
+      </h3>
+    <p>
+            <div><p>Fast-inbound Workstations Efficiency</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>99.9%</div>
+      </h3>
+    <p>
+            <div><p>Picking Accuracy</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>"The use of Hai Robotics’ ACRs has greatly improved the efficiency of warehouse picking. Geely achieved a more refined management of multiple SKUs and met the factory's just-in-time production requirements. Additionally, the high utilization of storage space further increased the storage density."</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name">
+            <div>Zhiwei Yang</div>
+      </div>
+        <div class="paragraph-case_content_card-sign_content_position">
+            <div>--General Manager of Geely RDC</div>
+      </div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2023-09/geely-link-co-logo.png" width="256" height="96" alt="Geely LYNK&amp;CO Logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/geely-lynkco">
+  <div class="case-image-pc">  <img src="/sites/default/files/2023-09/geely-link-co-factory.jpg" width="670" height="548" alt="Geely LYNK&amp;CO Factory Small Parts Warehouse" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/geely-lynkco">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2023-09/geely-link-co-factory_0.jpg" width="670" height="548" alt="Geely LYNK&amp;CO Factory Small Parts Warehouse" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>"The use of Hai Robotics’ ACRs has greatly improved the efficiency of warehouse picking. Geely achieved a more refined management of multiple SKUs and met the factory's just-in-time production requirements. Additionally, the high utilization of storage space further increased the storage density."</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name">
+            <div>Zhiwei Yang</div>
+      </div>
+        <div class="paragraph-case_content_card-sign_content_position">
+            <div>--General Manager of Geely RDC</div>
+      </div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2023-09/geely-link-co-logo.png" width="256" height="96" alt="Geely LYNK&amp;CO Logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+      
+
+<article role="article" about="/cases/sinocare-pharmaceuticals-warehouse" class="swiper-slide">
+    <div>
+    <div class="paragraph-case_content-left">
+      <h2>
+<span>Sinocare</span>
+</h2>
+      <div class="paragraph-case_content-left_desc">
+            <div><p>Semi-finished Pharmaceuticals Warehouse</p>
+</div>
+      </div>
+      <div class="paragraph-case_content-left_val">
+      <div>
+              <div>
+      <h3>
+            <div>10,652</div>
+      </h3>
+    <p>
+            <div><p>Storage Locations within 1096㎡</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>200 totes</div>
+      </h3>
+    <p>
+            <div><p>Inbound Efficiency Per Hour</p>
+</div>
+      </p>
+  </div>
+              <div>
+      <h3>
+            <div>13 totes/㎡</div>
+      </h3>
+    <p>
+            <div><p>Storage Density</p>
+</div>
+      </p>
+  </div>
+          </div>
+  </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>“The future of the big health industry will witness the inevitable trend of deep integration and advancement of the smart supply chain in the medical device health manufacturing sector. Sinocare is committed to leveraging digital transformation to achieve optimal performance growth in the industry."</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name">
+            <div>Li Zhi</div>
+      </div>
+        <div class="paragraph-case_content_card-sign_content_position">
+            <div>--Senior Manager of Bioengineering Sinocare</div>
+      </div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-11/sinocare-logo.png" width="256" height="96" alt="Sinocare Pharmaceutical Company Logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+    <div class="paragraph-case_content-right">
+      <div class="paragraph-case_content-right_img"><a href="/cases/sinocare-pharmaceuticals-warehouse">
+  <div class="case-image-pc">  <img src="/sites/default/files/2022-11/sinocare-semi-finished-pharmaceuticals-warehouse.jpg" width="670" height="548" alt="Sinocare Semi-finished Pharmaceuticals Warehouse Automation Project" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a></div>
+    </div>
+    <div class="paragraph-case_content-right_mobile">
+      <div class="paragraph-case_content-right_mobile_img">
+        <a href="/cases/sinocare-pharmaceuticals-warehouse">
+  <div class="case-image-mobile">  <img src="/sites/default/files/2022-11/sinocare-semi-finished-pharmaceuticals-warehouse_0.jpg" width="670" height="548" alt="Sinocare Semi-finished Pharmaceuticals Warehouse Automation Project" loading="lazy" typeof="foaf:Image" />
+
+</div>
+</a>
+      </div>
+        <div class="paragraph-case_content_card">
+    <div class="paragraph-case_content_card-content">
+      
+            <div><p>“The future of the big health industry will witness the inevitable trend of deep integration and advancement of the smart supply chain in the medical device health manufacturing sector. Sinocare is committed to leveraging digital transformation to achieve optimal performance growth in the industry."</p>
+</div>
+      
+    </div>
+    <div class="paragraph-case_content_card-sign">
+      <div class="paragraph-case_content_card-sign_content">
+        <div class="paragraph-case_content_card-sign_content_name">
+            <div>Li Zhi</div>
+      </div>
+        <div class="paragraph-case_content_card-sign_content_position">
+            <div>--Senior Manager of Bioengineering Sinocare</div>
+      </div>
+      </div>
+      <div class="paragraph-case_content_card-sign_logo">
+            <div>  <img src="/sites/default/files/2022-11/sinocare-logo.png" width="256" height="96" alt="Sinocare Pharmaceutical Company Logo" loading="lazy" typeof="foaf:Image" />
+
+</div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</article>
+
+  </div>
+<div class="swiper-pagination paragraph-case-pagination"></div>
+
+        </div>
+        <div class="swiper-navigation-wrapper">
+          <div class="swiper-button-next paragraph-case-button-next"></div>
+          <div class="swiper-button-prev paragraph-case-button-prev"></div>
+        </div>
+      </div>
+      <div class="paragraph-case_link">
+  <a href="/cases" target="_blank">Learn More</a>
+</div>
+      </div>
+</div>
+      
+  </div>
+<div>
+  
+    
+      
+            <div>  <div class="paragraph paragraph--type--why-hai-robotics paragraph--view-mode--default paragraph-why-hairobotics">
+          <div class="paragraph-why-hairobotics_bg">
+        <div class="paragraph-why-hairobotics_bg-img" style="background-image: url('/sites/default/files/2022-07/company-background.png');"></div>
+        <div class="paragraph-why-hairobotics_bg-img_mobile" style="background-image: url('/sites/default/files/2022-07/company-background-mobile.png');"></div>
+      </div>
+
+      <div class="paragraph-why-hairobotics_content">
+        
+            <div><h2>Why Hai Robotics</h2>
+
+<p>Hai Robotics is the pioneer and leader in Autonomous Case-handling Mobile<b> </b>Robot systems. The company is committed to providing efficient, intelligent, and flexible automation solutions through advanced robotics and smart algorithms creating value to every warehouse and factory.</p>
+
+<ul><li>
+	<p>1700<sup>+</sup></p>
+
+	<p>Employees</p>
+	</li>
+	<li>
+	<p>50<sup>%</sup></p>
+
+	<p>Engineers</p>
+	</li>
+	<li>
+	<p>1900<sup>+</sup></p>
+
+	<p>Patents</p>
+	</li>
+	<li>
+	<p>1300<sup>+</sup></p>
+
+	<p>Projects</p>
+	</li>
+	<li>
+	<p>40<sup>+</sup></p>
+
+	<p>Countries &amp; Regions</p>
+	</li>
+</ul></div>
+      
+        <div class="paragraph-why-hairobotics_content-link">
+            <div><a href="/company">About Us</a></div>
+      </div>
+      </div>
+      </div>
+</div>
+      
+  </div>
+<div>
+  
+    
+      
+            <div>
+  <div class="paragraph paragraph--type--news-and-media-block paragraph--view-mode--default">
+          <div class="news-and-media-title">
+        <div class="paragraph_title">
+            <div>Latest News & Blogs</div>
+      </div>
+        
+            <div><a href="/news">More News</a></div>
+      
+      </div>
+    <div class="hairobotics-swiper-container">
+      <div class="paragraph-news_content swiper news-and-media-row" id="paragraph-news">
+        
+<div class="swiper-wrapper paragraph-news-wrapper" data-num="7">
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/news/loreal-chinas-first-smart-fulfillment-center">
+  <div>
+    <a href="/news/loreal-chinas-first-smart-fulfillment-center">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-05/oulaiyasuzhouzhinengyunyingzhongxin_670x420.jpg" width="670" height="420" alt="L&#039;Oréal China&#039;s First SMART Fulfillment Center" loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/news/loreal-chinas-first-smart-fulfillment-center">
+        
+  <span>Hai Robotics Deploys Goods-to-Person Solution in L&#039;Oréal China&#039;s First SMART Fulfillment Center</span>
+
+      </a>
+    </h2>
+    
+    <div class="date-and-from">
+      
+            <div><time datetime="2024-05-13T12:00:00Z">May 13, 2024</time>
+</div>
+      
+      
+    </div>
+    <a href="/news/loreal-chinas-first-smart-fulfillment-center" class="view-more">Learn More<i class="icon icon-arrow_right"></i></a>
+  </div>
+</article>
+</div>
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/blog/evolution-global-3pl-automation-and-technology-trends">
+  <div>
+    <a href="/blog/evolution-global-3pl-automation-and-technology-trends">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-05/evolution-global-3pl-automation-technology-trends.jpg" width="670" height="420" alt="The Evolution of Global 3PL Automation and Technology Trends" loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/blog/evolution-global-3pl-automation-and-technology-trends">
+        
+<span>The Evolution of Global 3PL Automation and Technology Trends</span>
+
+      </a>
+    </h2>
+    
+    
+            <div><time datetime="2024-05-08T12:00:00Z">May 08, 2024</time>
+</div>
+      
+    <a href="/blog/evolution-global-3pl-automation-and-technology-trends" class="view-more">Learn More<i class="icon icon-arrow_right"></i> </a>
+  </div>
+
+</article>
+</div>
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/blog/efficiency-elevated-inside-automated-warehouses-retail-titans">
+  <div>
+    <a href="/blog/efficiency-elevated-inside-automated-warehouses-retail-titans">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-05/automated-warehouses-retail-titans.jpg" width="670" height="420" alt="Efficiency Elevated: Inside the Automated Warehouses of Retail Titans" loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/blog/efficiency-elevated-inside-automated-warehouses-retail-titans">
+        
+<span>Efficiency Elevated: Inside the Automated Warehouses of Retail Titans</span>
+
+      </a>
+    </h2>
+    
+  <div class="news-media-description"><p><span style="font-size:11pt"><span style="line-height:114%"><span style="font-family:Arial"><span dir="LTR" style="font-size:11.0000pt"><span style="font-family:Arial">How the world’s biggest retailers are reshaping their warehouse operations with goods-to-person robotic systems.</span></span></span></span></span></p>
+</div>
+
+    
+            <div><time datetime="2024-05-03T12:00:00Z">May 03, 2024</time>
+</div>
+      
+    <a href="/blog/efficiency-elevated-inside-automated-warehouses-retail-titans" class="view-more">Learn More<i class="icon icon-arrow_right"></i> </a>
+  </div>
+
+</article>
+</div>
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/news/pbsa-partnership-optimise-warehouse-automation-south-africa">
+  <div>
+    <a href="/news/pbsa-partnership-optimise-warehouse-automation-south-africa">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-04/pbsa-partnership-news.jpg" width="670" height="420" alt="PBSA and Hai Robotics Announce Partnership to Optimise Warehouse Automation in South Africa" loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/news/pbsa-partnership-optimise-warehouse-automation-south-africa">
+        
+  <span>PBSA and Hai Robotics Announce Partnership to Optimise Warehouse Automation in South Africa</span>
+
+      </a>
+    </h2>
+    
+    <div class="date-and-from">
+      
+            <div><time datetime="2024-05-03T12:00:00Z">May 03, 2024</time>
+</div>
+      
+      
+    </div>
+    <a href="/news/pbsa-partnership-optimise-warehouse-automation-south-africa" class="view-more">Learn More<i class="icon icon-arrow_right"></i></a>
+  </div>
+</article>
+</div>
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/news/newest-southeast-asia-hq-state-art-demo-centre-singapore">
+  <div>
+    <a href="/news/newest-southeast-asia-hq-state-art-demo-centre-singapore">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-04/newest-southeast-asia-hq.jpg" width="670" height="420" alt="Newest Southeast Asia HQ " loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/news/newest-southeast-asia-hq-state-art-demo-centre-singapore">
+        
+  <span>Hai Robotics Unveils its Newest Southeast Asia HQ and State-of-the-Art Demo Centre in Singapore</span>
+
+      </a>
+    </h2>
+    
+  <div class="news-description news-media-description"><p>Official Grand Opening Signals Hai Robotics' Strategic Move towards Advancing Robotic Warehouse Automation Technology in the Southeast Asia Region.</p>
+</div>
+
+    <div class="date-and-from">
+      
+            <div><time datetime="2024-04-30T12:00:00Z">Apr 30, 2024</time>
+</div>
+      
+      
+    </div>
+    <a href="/news/newest-southeast-asia-hq-state-art-demo-centre-singapore" class="view-more">Learn More<i class="icon icon-arrow_right"></i></a>
+  </div>
+</article>
+</div>
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/blog/future-logistics-virtual-warehouse-tour">
+  <div>
+    <a href="/blog/future-logistics-virtual-warehouse-tour">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-04/virtual-warehouse-tour.jpg" width="670" height="420" alt="Embarking the Future of Logistics with the Virtual Warehouse Tour" loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/blog/future-logistics-virtual-warehouse-tour">
+        
+<span>Embarking the Future of Logistics with the Virtual Warehouse Tour</span>
+
+      </a>
+    </h2>
+    
+  <div class="news-media-description"><p>Step into the future of warehousing with our Virtual Warehouse Tour!</p>
+</div>
+
+    
+            <div><time datetime="2024-04-28T12:00:00Z">Apr 28, 2024</time>
+</div>
+      
+    <a href="/blog/future-logistics-virtual-warehouse-tour" class="view-more">Learn More<i class="icon icon-arrow_right"></i> </a>
+  </div>
+
+</article>
+</div>
+       <div class="swiper-slide paragraph-news_content-item-with-title" ><article role="article" about="/blog/apparel-3pl-goods-to-person-automation">
+  <div>
+    <a href="/blog/apparel-3pl-goods-to-person-automation">
+      
+  <div class="news-media-img-box">  <img src="/sites/default/files/2024-04/apparel-3pl-reveal-top-3-results.jpg" width="670" height="420" alt="Apparel 3PL Reveals Top 3 Results Achieved With Goods-to-Person Automation" loading="lazy" typeof="foaf:Image" />
+
+</div>
+
+    </a>
+    <h2 class="news-media-title">
+      <a href="/blog/apparel-3pl-goods-to-person-automation">
+        
+<span>‘We’re Shipping Too Fast’: Apparel 3PL Reveals Top 3 Results Achieved With Goods-to-Person Automation</span>
+
+      </a>
+    </h2>
+    
+    
+            <div><time datetime="2024-04-16T12:00:00Z">Apr 16, 2024</time>
+</div>
+      
+    <a href="/blog/apparel-3pl-goods-to-person-automation" class="view-more">Learn More<i class="icon icon-arrow_right"></i> </a>
+  </div>
+
+</article>
+</div>
+  </div>
+<div class="swiper-pagination paragraph-news-pagination"></div>
+
+      </div>
+      <div class="swiper-navigation-wrapper">
+        <div class="swiper-button-next paragraph-news-button-next"></div>
+        <div class="swiper-button-prev paragraph-news-button-prev"></div>
+      </div>
+    </div>
+      </div>
+</div>
+      
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+                <div>
+    <div id="block-getintouch">
+  
+    
+      
+            <div><h2>Get In Touch</h2>
+
+<p>Contact Hai Robotics automation experts and learn how we can elevate your operations and increase storage density.</p>
+
+<p><a class="btn-getintouch" href="/contact" target="_blank">Contact Us</a></p>
+</div>
+      
+  </div>
+
+  </div>
+
+      </main>
+</div>
+
+<footer id="comFooter" role="footer">
+ <div class="footer">  <div>
+    <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer">
+            
+  <h2 class="visually-hidden" id="block-footer-menu">页脚</h2>
+  
+
+        
+              <ul>
+              <li>
+        <span>Products</span>
+                                <ul>
+              <li>
+        <a href="/products/haipick-system-1" data-drupal-link-system-path="node/741">HaiPick System 1</a>
+              </li>
+          <li>
+        <a href="/products/haipick-system-2" data-drupal-link-system-path="node/722">HaiPick System 2</a>
+              </li>
+          <li>
+        <a href="/products/haipick-system-3" data-drupal-link-system-path="node/715">HaiPick System 3</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42" data-drupal-link-system-path="node/45">Multi-layer ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42t" data-drupal-link-system-path="node/46">Telescopic Lift ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a3" data-drupal-link-system-path="node/183">Fork-lifting ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42-e6" data-drupal-link-system-path="node/997">Grappling-hook ACR</a>
+              </li>
+          <li>
+        <a href="/products/haipick-a42t-e2" data-drupal-link-system-path="node/706">Telescopic Grappling-Hook ACR</a>
+              </li>
+          <li>
+        <a href="/products/haistation" data-drupal-link-system-path="node/195">HaiStation Multi-function Workstations</a>
+              </li>
+          <li>
+        <a href="/products/haiq" data-drupal-link-system-path="node/181">Hai Q Intelligent Software Platform</a>
+              </li>
+          <li>
+        <a href="/products/haicharger" data-drupal-link-system-path="node/222">HaiCharger Smart Charger</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li>
+        <span>Industries</span>
+                                <ul>
+              <li>
+        <a href="/solutions/apparel" data-drupal-link-system-path="node/339">Apparel</a>
+              </li>
+          <li>
+        <a href="/solutions/e-commerce" data-drupal-link-system-path="node/341">E-commerce</a>
+              </li>
+          <li>
+        <a href="/solutions/3pl-solutions" data-drupal-link-system-path="node/342">3PL</a>
+              </li>
+          <li>
+        <a href="/solutions/retail" data-drupal-link-system-path="node/338">Retail</a>
+              </li>
+          <li>
+        <a href="/solutions/grocery" data-drupal-link-system-path="node/812">Grocery</a>
+              </li>
+          <li>
+        <a href="/solutions/healthcare" data-drupal-link-system-path="node/340">Healthcare</a>
+              </li>
+          <li>
+        <a href="/solutions/electronics" data-drupal-link-system-path="node/345">Electronics</a>
+              </li>
+          <li>
+        <a href="/solutions/automotive" data-drupal-link-system-path="node/343">Automotive</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li>
+        <span>Resources</span>
+                                <ul>
+              <li>
+        <a href="/cases" data-drupal-link-system-path="node/196">Case Studies</a>
+              </li>
+          <li>
+        <a href="/blog" data-drupal-link-system-path="node/91">Blogs</a>
+              </li>
+          <li>
+        <a href="/faq-glossary" data-drupal-link-system-path="node/939">FAQ & Glossary</a>
+              </li>
+          <li>
+        <a href="/download-center" data-drupal-link-system-path="node/983">Downloads</a>
+              </li>
+          <li>
+        <a href="/videos" data-drupal-link-system-path="node/662">Videos</a>
+              </li>
+          <li>
+        <a href="/virtual-warehouse" data-drupal-link-system-path="node/636">Virtual Warehouse</a>
+              </li>
+          <li>
+        <a href="/solution-generator" data-drupal-link-system-path="node/727">Solution Generator</a>
+              </li>
+        </ul>
+  
+              </li>
+          <li>
+        <span>About Us</span>
+                                <ul>
+              <li>
+        <a href="/company" data-drupal-link-system-path="node/321">Who We Are</a>
+              </li>
+          <li>
+        <a href="/our-culture" data-drupal-link-system-path="node/304">Our Culture</a>
+              </li>
+          <li>
+        <a href="/news" data-drupal-link-system-path="node/78">News</a>
+              </li>
+          <li>
+        <a href="/events" data-drupal-link-system-path="node/76">Events & Webinars</a>
+              </li>
+          <li>
+        <a href="https://www.hairobotics.com/partners">Partners</a>
+              </li>
+          <li>
+        <a href="/contact/global-locations" data-drupal-link-system-path="node/303">Global Locations</a>
+              </li>
+          <li>
+        <a href="/join-us" data-drupal-link-system-path="node/376">Join Us</a>
+              </li>
+          <li>
+        <a href="/contact" data-drupal-link-system-path="node/330">Contact Us</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div class="footer-container-right">
+<div id="block-followus">
+  
+    
+      
+            <div><p>Follow Us</p>
+
+<ul class="footer_social-media"><li class="footer_social-media_linkedin"><a href="https://www.linkedin.com/company/hai-robotics/">LinkedIn</a></li>
+	<li class="footer_social-media_facebook"><a href="https://www.facebook.com/HAIROBOTICS/">Facebook</a></li>
+	<li class="footer_social-media_twitter"><a href="https://twitter.com/RoboticsHai">Twitter</a></li>
+	<li class="footer_social-media_youtube"><a href="https://www.youtube.com/HAIROBOTICS">YouTube</a></li>
+	<li class="footer_social-media_wechat">WeChat
+	<div class="footer_social-media_qr">
+	<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img src="/sites/default/files/styles/large/public/2023-07/wechat.jpg?itok=QahOWcUS" width="200" height="200" alt="wechat" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</div>
+	</li>
+	<li class="footer_social-media_dy">Dy
+	<div class="footer_social-media_qr">
+	<div class="align-center">
+  
+  
+  <div>
+    <div class="visually-hidden">Image</div>
+              <div>  <img src="/sites/default/files/styles/large/public/2023-07/douyin.jpg?itok=-Wha12dh" width="200" height="200" alt="douyin" loading="lazy" typeof="foaf:Image" /></div>
+          </div>
+
+</div>
+</div>
+	</li>
+</ul></div>
+      
+  </div>
+<div id="block-newsletter-subscription">
+  
+    
+      <div class="hobs-newsletter-wrapper">
+      <div class="hobs-newsletter-mode">
+        <div class="hobs-newsletter-mode-content">
+          <p>Get the latest news from Hai Robotics</p>
+          <div class="hobs-newsletter-mode-actions">
+            <div class="email-container">
+              <input type="text" placeholder="Work Email" />
+            </div>
+            <div class="submit"></div>
+          </div>
+          <p class="hobs-newsletter-mode-msg"></p>
+        </div>
+      </div>
+      
+      <div class="hobs-newsletter-form">
+        <div class="hobs-newsletter-form-content">
+          <div class="hobs-newsletter-form-close"></div>
+          <span id="webform-submission-subscription-node-39-form-ajax-content"></span><div id="webform-submission-subscription-node-39-form-ajax" class="webform-ajax-form-wrapper" data-effect="fade" data-progress-type="throbber"><form class="webform-submission-form webform-submission-add-form webform-submission-subscription-form webform-submission-subscription-add-form webform-submission-subscription-node-39-form webform-submission-subscription-node-39-add-form js-webform-details-toggle webform-details-toggle" autocomplete="off" data-drupal-selector="webform-submission-subscription-node-39-add-form" action="/" method="post" id="webform-submission-subscription-node-39-add-form" accept-charset="UTF-8">
+  
+  <div id="edit-text" class="js-form-item form-item js-form-type-processed-text form-item- js-form-item- form-no-label">
+        <p>Get the latest news from Hai Robotics</p>
+
+        </div>
+<div data-drupal-selector="edit-name" id="edit-name" class="js-form-wrapper form-wrapper"><div class="js-form-item form-item js-form-type-textfield form-item-first-name js-form-item-first-name form-no-label">
+        <input data-webform-required-error="Please enter your first name." data-drupal-selector="edit-first-name" type="text" id="edit-first-name" name="first_name" value="" size="60" maxlength="10" placeholder="First name*" class="form-text required" required="required" aria-required="true" />
+
+
+  <div class="required-tips"></div>
+
+        </div>
+<div class="js-form-item form-item js-form-type-textfield form-item-last-name js-form-item-last-name form-no-label">
+        <input data-webform-required-error="Please enter your last name." data-drupal-selector="edit-last-name" type="text" id="edit-last-name" name="last_name" value="" size="60" maxlength="10" placeholder="Last name*" class="form-text required" required="required" aria-required="true" />
+
+
+  <div class="required-tips"></div>
+
+        </div>
+</div>
+<div class="webform-readonly js-form-item form-item js-form-type-email form-item-subscription-email js-form-item-subscription-email form-no-label">
+        <div class="email-container">
+    <input readonly="readonly" data-webform-required-error="Please enter your valid work email. " pattern="^([a-zA-Z0-9_\.-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+" data-webform-pattern-error="Please enter your valid work email. " data-drupal-selector="edit-subscription-email" type="email" id="edit-subscription-email" name="subscription_email" value="" size="60" maxlength="254" placeholder="Work Email" class="form-email required" required="required" aria-required="true" />
+
+  </div>
+
+  <div class="required-tips"></div>
+
+        </div>
+<div class="webform-readonly js-form-item form-item js-form-type-textfield form-item-region js-form-item-region form-no-label">
+        <input readonly="readonly" data-webform-required-error="Please select your country / region." data-drupal-selector="edit-region" type="text" id="edit-region" name="region" value="" size="60" maxlength="255" placeholder="Country / Region*" class="form-text required" required="required" aria-required="true" />
+
+
+  <div class="required-tips"></div>
+
+        </div>
+<div class="js-form-item form-item js-form-type-checkbox form-item-privacy-policy js-form-item-privacy-policy form-no-label">
+        <input data-drupal-selector="edit-privacy-policy" aria-describedby="edit-privacy-policy--description" type="checkbox" id="edit-privacy-policy" name="privacy_policy" value="1" class="form-checkbox required" required="required" aria-required="true" />
+
+            <div class="description">
+      <div id="edit-privacy-policy--description" class="webform-element-description">I&#39;ve read and accepted <a href="/privacy-policy" target="_blank">Privacy Policy</a></div>
+
+    </div>
+  </div>
+    <div  data-drupal-selector="edit-captcha" class="captcha"><input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="5546839" />
+<input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="sj8gW6jBlfJafuWIlMRWQeHBbyW7uh3jD0P1ODmGeb8" />
+<input data-drupal-selector="edit-captcha-response" type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6Lc0l6chAAAAAOr0X-NFjOZFTLIr0CBQRtHyl3ew" data-theme="light" data-type="image"></div><input data-drupal-selector="edit-captcha-cacheable" type="hidden" name="captcha_cacheable" value="1" />
+</div>
+<input data-drupal-selector="edit-lead-url" type="hidden" name="lead_url" value="https://www.hairobotics.com" />
+<div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="webform-button--submit button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit" data-disable-refocus="true" type="submit" id="edit-actions-submit" name="op" value="Submit" />
+
+</div>
+<input autocomplete="off" data-drupal-selector="form-oplip7julkkvfz6ohkvbmz-jazv6biggjl99kuzmoh8" type="hidden" name="form_build_id" value="form-opLip7juLkKvFz6oHKVBmz-JAzv6bIGGJL99kuzMOh8" />
+<input data-drupal-selector="edit-webform-submission-subscription-node-39-add-form" type="hidden" name="form_id" value="webform_submission_subscription_node_39_add_form" />
+
+
+  
+</form>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="block-ip-redirection-popup">
+  
+    
+      
+            <div><div class="ip-redirector">
+<div class="ip-redirector_content">
+<p>We noticed that you are visiting from <span class="country-label">China</span>. Would you like to go to <span class="country-label">China</span> website?</p>
+</div>
+
+<div class="ip-redirector_btns">
+<div class="ip-redirector_btns-confirm"><a data-iso="CN" href="/cn/">简体中文<!-- a--> </a><a data-iso="TW" href="/tw/">繁體中文<!-- a--> </a><a data-iso="JP" href="/jp/">日本語<!-- a--> </a><a data-iso="KR" href="/kr/">한국어<!-- a--> </a><a data-iso="EN" href="/">English<!-- a--></a></div>
+
+<div class="ip-redirector_btns-close"><button>Close</button></div>
+</div>
+</div>
+</div>
+      
+  </div>
+
+  </div>
+</div>
+ <div class="footer-copyright">  <div>
+    <div id="block-footercopyright">
+  
+    
+      
+            <div><p>© Copyright 2015-2024 Hai Robotics       </p>
+
+<ul class="footer-copyright_policies"><li><a href="/terms-of-use">Terms Of Use</a></li>
+	<li><a href="/privacy-policy">Privacy Policy</a></li>
+	<li><a href="/cookie-usage">Use of Cookie</a></li>
+	<li><a href="/sitemap">Sitemap</a></li>
+</ul></div>
+      
+  </div>
+
+  </div>
+</div>
+</footer>
+
+  </div>
+
+    
+    <script src="/sites/default/files/js/js_4M-y34YvPMomRiUtQYtLmsji0MOlifqYBxIjZgk_cpw.js"></script>
+<script src="//static.addtoany.com/menu/page.js" async></script>
+<script src="/sites/default/files/js/js_ub51wMJa7a5s4rqOWoE6LS41MCo9CtIgrOXRfmOjgqI.js"></script>
+<script src="//js.hs-scripts.com/22754591.js" id="hs-script-loader" defer async></script>
+<script src="/sites/default/files/js/js_Ai9Dz97RaG4LLF-XiANf_byJK2_R8W5D0FCCjWDUQP4.js"></script>
+<script src="/themes/custom/hairobotics/lib/md5.min.js?v=9.5.10" defer></script>
+<script src="/themes/custom/hairobotics/dist/hairobotics.js?v=9.5.10" defer></script>
+<script src="/sites/default/files/js/js_QZHjAaCQq8xYiz-NV7UI-HMZP7pC8uIsW4rZmNcjkzA.js"></script>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "wrlXFO7kEb7Gqd5LtT5s1",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="wrlXFO7kEb7Gqd5LtT5s1"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
+  </body>
+</html>
